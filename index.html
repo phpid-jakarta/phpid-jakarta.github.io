@@ -1,0 +1,23 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+---
+<div class="home">
+	{% for post in paginator.posts %}
+		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{% if page.comments != false and jekyll.environment == "production" %} • <a href="{{site.baseurl}}{{ post.url }}#disqus_thread">0 Komentar</a>{% endif %}
+		<h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+		<article class="post">
+			<div class="post-content">
+				{{ post.excerpt }}
+				<p class="right"><a href="{{site.baseurl}}{{ post.url }}">Read more</a></p>
+			</div>
+		</article>
+	{% endfor %}
+	
+	{% include paginator.html %}
+	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+</div>

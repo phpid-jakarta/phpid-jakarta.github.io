@@ -1,0 +1,70 @@
+<!-- Pagination links created by Eko Junaidi Salam -->
+{% if paginator.total_pages > 1 %}
+<div class="center">
+	<div class="pagination">
+		{% if paginator.total_pages > 5 %}
+			{% assign var_low = 1 %}
+			{% assign var_mid = 3 %}
+			{% assign var_high = var_mid | plus: 2 %}
+		{% else %}
+			{% assign var_low = 1 %}
+			{% assign var_mid = 2 %}
+			{% assign var_high = paginator.total_pages %}
+		{% endif %}
+		
+		<a href="{{site.baseurl}}/">Begin</a>
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+		{% else %}
+			<a href="#">&laquo; Prev</a>
+		{% endif %}
+
+		{% if paginator.page <= var_mid %}
+			{% for page in (var_low..var_high) %}
+				{% if page == paginator.page %}
+					<a href="#" class="active">{{ page }}</a>
+				{% elsif page == 1 %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+				{% else %}
+					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				{% endif %}
+			{% endfor %}
+		{% else %}
+			{% assign var_mid = paginator.page %}
+			{% assign var_low = var_mid | minus: 2 %}
+			{% assign var_high = var_mid | plus: 2 %}
+			{% if var_high > paginator.total_pages %}
+				{% assign var_high = paginator.total_pages %}
+			{% elsif var_low < 1%}
+				{% assign var_low = 1 %}
+			{% endif %}
+			
+			{% for page in (var_low..var_high) %}
+				{% if page == paginator.page %}
+					{% assign var_mid = paginator.page %}
+					{% assign var_low = var_mid | minus: 2 %}
+					{% assign var_high = var_mid | plus: 2 %}
+					
+					{% if var_high > paginator.total_pages %}
+						{% assign var_high = paginator.total_pages %}
+					{% elsif var_low < 1%}
+						{% assign var_low = 1 %}
+					{% endif %}
+					<a href="#" class="active">{{ page }}</a>
+				{% elsif page == 1 %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+				{% else %}
+					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+		{% else %}
+			<a href="#">Next &raquo;</a>
+		{% endif %}
+		<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}">Last</a>
+	</div>
+</div>
+{% endif %}
