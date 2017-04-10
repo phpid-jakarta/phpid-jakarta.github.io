@@ -6,7 +6,7 @@ layout: default
 ---
 <div class="home">
 	{% for post in paginator.posts %}
-		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{% if page.comments != false and jekyll.environment == "production" %} • <a href="{{site.baseurl}}{{ post.url }}#disqus_thread">0 Komentar</a>{% endif %}
+		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="post-meta">{{ post.author }}</span></span>{% endif %}{% if page.comments != false and jekyll.environment == "production" %} • <a class="post-meta" href="{{site.baseurl}}{{ post.url }}#disqus_thread">0 Komentar</a>{% endif %}
 		<h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
