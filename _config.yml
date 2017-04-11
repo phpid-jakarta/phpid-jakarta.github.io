@@ -16,7 +16,7 @@
 title: PHP ID Chapter Jakarta
 email: phpid.jakarta@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ilmu adalah titipan `ilahi`, tak selamanya kita miliki tapi tetap harus kita cari.
+  Komunitas PHP Indonesia Regional Jakarta
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 excerpt_separator: <a name='more'></a>
@@ -36,3 +36,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# SASS setup  
+sass:
+  sass_dir: _sass
+  style: compressed
