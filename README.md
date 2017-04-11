@@ -1,8 +1,10 @@
 # PHP Indonesia Chapter Jakarta
 
-[![License](https://img.shields.io/github/license/phpid-jakarta/phpid-jakarta.github.io.svg)](https://github.com/phpid-jakarta/phpid-jakarta.github.io)
-[![GitHub contributors](https://img.shields.io/github/contributors/phpid-jakarta/phpid-jakarta.github.io.svg)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/network/members)
-[![Downloads](https://img.shields.io/github/downloads/phpid-jakarta/phpid-jakarta.github.io/total.svg)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/archive/master.zip)
+[![License](https://img.shields.io/github/license/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io) 
+[![Github Issue](https://img.shields.io/github/issues/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/issues) 
+[![GitHub Fork](https://img.shields.io/github/forks/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/network) 
+[![GitHub Star](https://img.shields.io/github/stars/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/stargazers) 
+[![GitHub Contributors](https://img.shields.io/github/contributors/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/network/members)
 
 ## Homepage Website
 Website PHP Indonesia Chapter Jakarta bisa diakses di [https://jakarta.phpindonesia.or.id/](http://jakarta.phpindonesia.or.id/)
