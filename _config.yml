@@ -23,10 +23,13 @@ excerpt_separator: <a name='more'></a>
 paginate: 5
 twitter_username: phpid-jakarta
 github_username:  phpid-jakarta
+disqus:
+   shortname: phpid-jakarta
+google_analytics: UA-97096911-1
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-time-machine
+theme: minima
 gems:
   - jekyll-paginate
   - jekyll-feed
