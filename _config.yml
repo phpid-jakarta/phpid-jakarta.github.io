@@ -23,6 +23,7 @@ excerpt_separator: <a name='more'></a>
 paginate: 5
 twitter_username: phpid-jakarta
 github_username:  phpid-jakarta
+facebook_url: https://m.facebook.com/profile.php?id=100011420743645
 disqus:
    shortname: phpid-jakarta
 google_analytics: UA-97096911-1
@@ -33,6 +34,7 @@ theme: minima
 gems:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-autoprefixer
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -41,3 +43,9 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+
+# autoprefixer
+autoprefixer:
+  only_production: true
+  browsers:
+  - last 2 versions  
