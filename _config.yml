@@ -23,10 +23,11 @@ excerpt_separator: <a name='more'></a>
 paginate: 5
 twitter_username: phpid-jakarta
 github_username:  phpid-jakarta
-facebook_url: https://m.facebook.com/profile.php?id=100011420743645
+facebook_url: https://facebook.com/profile.php?id=100011420743645
 disqus:
    shortname: phpid-jakarta
 google_analytics: UA-97096911-1
+copyright_year: 2017
 
 # Build settings
 markdown: kramdown
