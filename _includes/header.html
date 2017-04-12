@@ -1,8 +1,17 @@
-<header class="site-header" role="banner">
+<header class="site__header header" role="banner">
 
-  <div class="wrapper">
+  <div class="header__wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
+    <div class="header__brand">
+        <a href="{{ "/" | relative_url}}">
+            <img src="/assets/images/phpindonesia.png" 
+            alt="{{ site.title | escape }}" 
+            title="{{ site.title | escape }}"/>
+        </a>
+        <div class="header__title">
+            {{ site.title | escape }}
+        </div>
+    </div>
 
     <nav class="site-nav">
       <span class="menu-icon">
