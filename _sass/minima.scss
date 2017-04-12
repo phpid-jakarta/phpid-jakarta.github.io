@@ -19,7 +19,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 // Width of the content area
 $content-width:    800px !default;
 
-$on-palm:          600px !default;
+$on-palm:          640px !default;
 $on-laptop:        800px !default;
 
 // Use media queries like this:
@@ -37,11 +37,22 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "minima/mixins/appearance",
+  "minima/mixins/background",
+  "minima/mixins/border-radius",
+  "minima/mixins/boxes",
+  "minima/mixins/clearfix",
+  "minima/mixins/image",
+  "minima/mixins/placeholders",
+  "minima/mixins/transitions",
+
   "minima/normalize",
   "minima/base",
+
   "minima/site/header",
   "minima/site/page",
   "minima/site/post",
   "minima/site/footer",
+
   "minima/syntax-highlighting"
 ;
