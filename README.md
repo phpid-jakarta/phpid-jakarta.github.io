@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# PHP Indonesia Chapter Jakarta
 
-You can use the [editor on GitHub](https://github.com/phpid-jakarta/phpid-jakarta.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[![License](https://img.shields.io/github/license/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io) 
+[![Github Issue](https://img.shields.io/github/issues/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/issues) 
+[![GitHub Fork](https://img.shields.io/github/forks/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/network) 
+[![GitHub Star](https://img.shields.io/github/stars/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/stargazers) 
+[![GitHub Contributors](https://img.shields.io/github/contributors/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/network/members)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Homepage Website
+Website PHP Indonesia Chapter Jakarta bisa diakses di [https://jakarta.phpindonesia.or.id/](http://jakarta.phpindonesia.or.id/)
 
-### Markdown
+## Tentang Kami
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Visi dan Misi
 
-```markdown
-Syntax highlighted code block
+## Tujuan dibuatnya Github Pages ini : 
+1. Sebagai media publikasi program kerja PHP Indonesia Chapter Jakarta.
+2. Sebagai media belajar dan saling berbagi pengetahuan.
+3. Sebagai media interaksi antar member PHP Indonesia
 
-# Header 1
-## Header 2
-### Header 3
+## Cara berkontribusi
+[https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Aturan-dan-Cara-Berkontribusi](https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Aturan-dan-Cara-Berkontribusi)
 
-- Bulleted
-- List
+## Gitflow
+[https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/GitFlow](https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/GitFlow)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/phpid-jakarta/phpid-jakarta.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Setup project
+[https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Setup-Project](https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Setup-Project)
