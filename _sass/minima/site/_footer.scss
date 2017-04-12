@@ -17,56 +17,51 @@
     &__row{      
       font-size: 15px;
       color: $grey-color;
-      margin-left: -$spacing-unit/2;
       @extend %clearfix;
     }
 
-    &__col{
-      float: left;
-      margin-bottom: $spacing-unit/2;
-      padding-left: $spacing-unit/2;
+    &__social{
 
-      &-1{
-        width: -webkit-calc(35%-(#{$spacing-unit}/2));
-        width:         calc(35%-(#{$spacing-unit}/2));
-      }
-      &-2{
-        width: -webkit-calc(20%-(#{$spacing-unit}/2));
-        width:         calc(20%-(#{$spacing-unit}/2));
-      }
-      &-3{
-        width: -webkit-calc(45%-(#{$spacing-unit}/2));
-        width:         calc(45%-(#{$spacing-unit}/2));
-      }
+      font-size: 2em;
+      padding: 5px 10px 5px 0; 
 
+      &:hover{
+        text-decoration: none;
+      }
     }
+
+    
 }
 
 
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
+.is--fb{
+  color: #3b5998;
 
-
-@include media-query($on-laptop) {
-  .footer__col-1,
-  .footer__col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer__col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  &:hover, &:visited, a:active{
+    color: #3b5998;    
   }
 }
 
-@include media-query($on-palm) {
-  .footer__col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+.is--tw{
+  color: #55acee;
+
+  &:hover, &:focus, &:active{
+    color: #55acee;    
+  }
+}
+
+.is--gh{
+  color : #000;
+
+  &:hover, &:focus, &:active{
+    color: #000;    
+  }
+}
+
+.is--rss{
+  color : #ff6600;
+
+  &:hover, &:focus, &:active{
+    color: #ff6600;    
   }
 }

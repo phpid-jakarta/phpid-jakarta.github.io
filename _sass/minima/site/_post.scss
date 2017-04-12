@@ -43,3 +43,25 @@
     }
   }
 }
+
+.post__more{
+    display: inline-block;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include appearance(none);
+
+    background: $brand-color;
+    color: #fff;
+
+    &:hover, &:focus, &:active
+    {
+        background: lighten($brand-color,10%);
+        text-decoration: none;
+        color: #fff;
+    }
+}
