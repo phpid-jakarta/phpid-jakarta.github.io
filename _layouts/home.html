@@ -11,17 +11,27 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <i class="ion-ios-clock-outline"></i> 
+        <span class="post-meta">
+          {{ post.date | date: "%b %-d, %Y" }}
+        </span>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-		<article class="post">
-			<div class="post-content">
-				{{ post.excerpt }}
-				<p class="right"><a href="{{site.baseurl}}{{ post.url }}">Read more</a></p>
-			</div>
-		</article>
+
+    		<article class="post">
+    			<div class="post-content">
+    				{{ post.excerpt }}
+    				<p class="right">
+              <a href="{{site.baseurl}}{{ post.url }}" class="post__more">
+                Read More
+              </a>
+            </p>
+    			</div>
+    		</article>
+
       </li>
     {% endfor %}
   </ul>
