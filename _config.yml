@@ -36,6 +36,8 @@ gems:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-autoprefixer
+  - jekyll-sitemap
+  
 exclude:
   - Gemfile
   - Gemfile.lock
