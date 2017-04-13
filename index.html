@@ -6,18 +6,45 @@ layout: default
 ---
 <div class="home">
 	{% for post in paginator.posts %}
-		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>{% if post.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="post-meta">{{ post.author }}</span></span>{% endif %}{% if page.comments != false and jekyll.environment == "production" %} • <a class="post-meta" href="{{site.baseurl}}{{ post.url }}#disqus_thread">0 Komentar</a>{% endif %}
-		<h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-		<article class="post">
+		
+		<article class="post post--card">
+
+			<span class="post__meta">
+				<i class="ion-calendar"></i>&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }}
+			</span>
+
+			{% if post.author %}
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+					<span itemprop="name" class="post__meta">
+						&nbsp;&nbsp;<i class="ion-person"></i>
+						&nbsp;&nbsp;{{ post.author }}
+					</span>
+				</span>
+			{% endif %}
+
+			{% if page.comments != false and jekyll.environment == "production" %}				
+				<a class="post__meta" href="{{site.baseurl}}{{ post.url }}#disqus_thread">
+					&nbsp;&nbsp;<i class="ion-chatboxes"></i>
+					&nbsp;&nbsp;0 Komentar
+				</a>
+			{% endif %}
+
+			<h2>
+	          <a class="post__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+	        </h2>
+
 			<div class="post-content">
 				{{ post.excerpt }}
-				<p class="right"><a href="{{site.baseurl}}{{ post.url }}">Read more</a></p>
+				<p class="right">
+					<a href="{{site.baseurl}}{{ post.url }}" class="post__more">
+						Read More
+					</a>
+				</p>
 			</div>
 		</article>
+
 	{% endfor %}
 	
 	{% include paginator.html %}
-	<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+	
 </div>

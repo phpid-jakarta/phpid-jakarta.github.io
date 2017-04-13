@@ -2,6 +2,44 @@
 /**
  * Posts
  */
+
+ .post{
+
+    &--card{
+        background: #fff;
+        border: 1px solid rgba(0,0,0,.09);
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+
+        @include border-radius(.25em);
+
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+    }
+
+    &__meta {
+      font-size: $small-font-size;
+      color: $grey-color;
+    }
+
+    &__link {
+      display: block;
+      font-size: 24px;
+    }
+
+    &__profile{
+        @include border-radius(50%);
+        
+        height: 36px;
+        width: 36px;
+    }
+ }
+
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
@@ -42,4 +80,26 @@
       font-size: 18px;
     }
   }
+}
+
+.post__more{
+    display: inline-block;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include appearance(none);
+
+    background: $brand-color;
+    color: #fff;
+
+    &:hover, &:focus, &:active
+    {
+        background: lighten($brand-color,10%);
+        text-decoration: none;
+        color: #fff;
+    }
 }
