@@ -1,10 +1,10 @@
-- title: "Tentang Kami"
+- title: "Profil"
   href: "#"
   sub:
-  - title: "Sejarah"
-    href: "menu/sejarah.html"
-  - title: "Visi Misi"
-    href: "menu/visi_misi.html"
+  - title: "Tentang Kami"
+    href: "tentang_kami.html"
+  - title: "Visi - Misi"
+    href: "visi_misi.html"
 
 - title: "Program Kerja"
   href: "program_kerja.html"
@@ -13,6 +13,6 @@
   href: "#"
   sub:
   - title: "Foto"
-    href: "menu/foto.html"
+    href: "galeri_foto.html"
   - title: "Video"
-    href: "menu/video.html"
+    href: "galeri_video.html"
