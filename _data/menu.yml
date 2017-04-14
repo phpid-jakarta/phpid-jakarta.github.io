@@ -1,0 +1,18 @@
+- title: "Tentang Kami"
+  href: "#"
+  sub:
+  - title: "Sejarah"
+    href: "menu/sejarah.html"
+  - title: "Visi Misi"
+    href: "menu/visi_misi.html"
+
+- title: "Program Kerja"
+  href: "program_kerja.html"
+
+- title: "Galeri"
+  href: "#"
+  sub:
+  - title: "Foto"
+    href: "menu/foto.html"
+  - title: "Video"
+    href: "menu/video.html"
