@@ -2,6 +2,7 @@
 layout: post
 title: K-Means Clustering Algorithm
 author: Eko Junaidi Salam
+categories: ["ML","Clustering"]
 tags: [Unsupervised Learning, Clustering]
 ---
 
