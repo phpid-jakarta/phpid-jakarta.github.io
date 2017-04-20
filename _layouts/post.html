@@ -16,7 +16,16 @@ comments: true
       &nbsp;&nbsp;<i class="ion-person"></i>
       &nbsp;&nbsp;<span itemprop="name">{{ page.author }}</span>
     </span>
-    {% endif %}</p>
+    {% endif %}
+
+    {% if page.tags %}
+      <ul class="tags">
+      {% for tag in page.tags %}
+        <li><a href="#" class="tag">{{ tag }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">

@@ -1,0 +1,21 @@
+- title: "Profil"
+  href: "#"
+  sub:
+  - title: "Tentang Kami"
+    href: "tentang_kami.html"
+  - title: "Visi - Misi"
+    href: "visi_misi.html"
+
+- title: "Program Kerja"
+  href: "program_kerja.html"
+
+- title: "Galeri"
+  href: "#"
+  sub:
+  - title: "Foto"
+    href: "galeri_foto.html"
+  - title: "Video"
+    href: "galeri_video.html"
+    
+- title: "Arsip"
+  href: "arsip.html"

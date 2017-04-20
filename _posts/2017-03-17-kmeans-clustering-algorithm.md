@@ -2,7 +2,8 @@
 layout: post
 title: K-Means Clustering Algorithm
 author: Eko Junaidi Salam
-tags: Unsupervised Learning, Clustering
+categories: ["ML","Clustering"]
+tags: [Unsupervised Learning, Clustering]
 ---
 
 **Contoh Input Data :**
@@ -42,7 +43,7 @@ Contoh bila N,M Dimensions : `2,3` maka samples akan dibagi 2 dimensi dan centro
 		$('#btn_hitung').click(function(){
 			var dim = $('[name="txt_dim"]').val().replace(/ +/g,'');
 			var str = $('[name="txt_samples"]').val().replace(/ +/g,'');
-			
+
 			if(dim === '' || str === '' || dim === ' ' || str === ' '){
 				alert('N Dimensions dan Samples harus diisi !!!');
 				return;
@@ -94,8 +95,8 @@ Contoh bila N,M Dimensions : `2,3` maka samples akan dibagi 2 dimensi dan centro
 			}
 			console.log(samples);
 			console.log(centroids);
-			
-			
+
+
 			var k_means = new ejs_kmeans.k_mean_cluster(samples);
 			k_means.initialize(centroids);
 			k_means.calculate();
