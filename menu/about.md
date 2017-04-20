@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tentang Kami
-permalink: /tentang-kami/
+permalink: tentang_kami.html
 ---
 
 PHP Indonesia Chapter Jakarta merupakan sub-regional dari komunitas PHP Indonesia.
