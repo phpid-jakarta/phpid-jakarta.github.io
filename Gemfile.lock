@@ -38,7 +38,7 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.6)
-    minima (2.1.0)
+    minima (2.1.1)
       jekyll (~> 3.3)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
@@ -63,7 +63,7 @@ DEPENDENCIES
   minima
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.14.6

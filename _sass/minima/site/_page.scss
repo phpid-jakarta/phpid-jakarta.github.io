@@ -2,21 +2,26 @@
 /**
  * Page content
  */
-.page-content {
-  padding: 5.5em 0 2em;
+.text-center
+{
+    text-align: center;
+}
+.page-content
+{
+    padding: 5.5em 0 2em;
 }
 
-.page-heading {
-  font-size: 20px;
+.page-heading
+{
+    font-size: 20px;
 }
 
-.post-list {
-  margin-left: 0;
-  list-style: none;
-
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+.post-list
+{
+    margin-left: 0;
+    list-style: none;
+    > li
+    {
+        margin-bottom: $spacing-unit;
+    }
 }
-
-
