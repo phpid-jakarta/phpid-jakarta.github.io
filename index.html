@@ -4,29 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
 ---
-<!-- 1st level menu BOF yang asli ada di _includes/header.html -->
-		{% for nav in site.data.menu %}
-			{% if nav.sub != null %}
-				<li>
-					<a class="page-link" href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a>
-					<ul>
-					<!-- 2nd level -->
-					{% for sub in nav.sub %}
-						<li>
-							<a class="page-link" href="{{ site.baseurl }}{{ sub.href }}">
-							{{ sub.title }}
-							</a>
-						</li>
-					{% endfor %}
-					</ul>
-				</li>
-			{% else %}
-				<li>
-					<a class="page-link" href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a>
-				</li>
-			{% endif %}
-		{% endfor %}
-<!-- 1st level menu EOF-->
 <div class="home">
 	{% for post in paginator.posts %}
 		

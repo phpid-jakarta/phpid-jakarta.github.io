@@ -8,6 +8,7 @@ GEM
     colorator (1.1.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.4.3)
       addressable (~> 2.4)
@@ -51,6 +52,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   jekyll (= 3.4.3)
@@ -61,7 +63,7 @@ DEPENDENCIES
   minima
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.3p222
 
 BUNDLED WITH
    1.14.6
