@@ -18,8 +18,8 @@ email: phpid.jakarta@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Komunitas PHP Indonesia Regional Jakarta
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jakarta.phpindonesia.or.id"
-enforce_ssl: jakarta.phpindonesia.or.id
+url: ""
+#enforce_ssl: jakarta.phpindonesia.or.id
 
 
 excerpt_separator: <a name='more'></a>
