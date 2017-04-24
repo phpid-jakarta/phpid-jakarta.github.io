@@ -21,7 +21,7 @@ comments: true
     {% if page.tags %}
       <ul class="tags">
       {% for tag in page.tags %}
-        <li><a href="#" class="tag">{{ tag }}</a></li>
+        <li><a href="/arsip.html#tag-{{tag | downcase | replace: ' ', '_'}}" class="tag">{{ tag }}</a></li>
       {% endfor %}
       </ul>
     {% endif %}

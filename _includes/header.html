@@ -4,7 +4,7 @@
 
     <div class="header__brand">
         <a href="{{ "/" | relative_url}}">
-            <img src="/assets/images/phpindonesia.png" 
+            <img src="/assets/images/logo.png" 
             alt="{{ site.title | escape }}" 
             title="{{ site.title | escape }}"/>
         </a>
@@ -18,12 +18,12 @@
         {% for nav in site.data.menu %}
           {% if nav.sub != null %}
             <li class="menu__item">
-              <a class="menu__link" href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a>
+              <a class="menu__link" href="/{{ nav.href }}">{{ nav.title }}</a>
               <ul class="menu--child">
                 <div class="menu__wrapper">
                   {% for sub in nav.sub %}
                     <li>
-                      <a class="menu__link--child" href="{{ site.baseurl }}{{ sub.href }}">
+                      <a class="menu__link--child" href="/{{ sub.href }}">
                       {{ sub.title }}
                       </a>
                     </li>
@@ -33,7 +33,7 @@
             </li>
           {% else %}
             <li class="menu__item">
-              <a class="menu__link" href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a>
+              <a class="menu__link" href="/{{ nav.href }}">{{ nav.title }}</a>
             </li>
           {% endif %}
         {% endfor %}

@@ -24,16 +24,18 @@ permalink: arsip.html
 {% endfor %}
 
 <h3 class='text-center'>Tags</h3>
+<p class='text-center'>{% for pt in site.tags %}<a href="#tag-{{pt[0] | downcase | replace: ' ', '_'}}">{{pt[0]}}</a>, {% endfor %}</p>
 {% for tag in site.tags %}
 {% assign nt = tag[0] %}
 
+#### {{ nt }} {#tag-{{nt | downcase | replace: ' ', '_'}}}
 <ul> 
-  {% for post in site.posts %}
-     {% for pt in post.tags %}
-    {% if nt == pt %}
-      <li><a href="{{ post.url }}">{{ pt }}</a></li>
-    {% endif %}  
-   {% endfor %} 
-  {% endfor %}
+{% for post in site.posts %}
+	{% for pt in post.tags %}
+		{% if nt == pt %}
+			<li><a id="#tag-{{pt | downcase | replace: ' ', '_'}}" href="{{ post.url }}">{{ pt }}</a></li>
+		{% endif %}  
+	{% endfor %} 
+{% endfor %}
 </ul>  
 {% endfor %}
