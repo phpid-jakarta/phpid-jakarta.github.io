@@ -33,7 +33,7 @@ permalink: arsip.html
 {% for post in site.posts %}
 	{% for pt in post.tags %}
 		{% if nt == pt %}
-			<li><a id="#tag-{{pt | downcase | replace: ' ', '_'}}" href="{{ post.url }}">{{ pt }}</a></li>
+			<li><a id="#tag-{{pt | downcase | replace: ' ', '_'}}" href="{{ post.url }}">{{ post.title }}</a></li>
 		{% endif %}  
 	{% endfor %} 
 {% endfor %}
