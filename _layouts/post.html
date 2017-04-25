@@ -36,10 +36,18 @@ comments: true
 
         {% if page.categories %}
             {% for category in page.categories %}
-              <a href="{{ category }}">
-                {{ category }}
-              </a>
-              <i class="ion-chevron-right"></i>
+
+              {% for categoryStatic in site.data.category %}
+                {% if categoryStatic.category == category %}
+                  
+                    <a href="{{ categoryStatic.href }}">
+                      {{ category }}
+                    </a>
+                    <i class="ion-chevron-right"></i>
+
+                {% endif %}  
+              {% endfor %}
+
             {% endfor %}
         {% endif %}
 
