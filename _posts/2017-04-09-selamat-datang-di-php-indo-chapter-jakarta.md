@@ -2,11 +2,10 @@
 layout: post
 title:  Selamat datang di Php Indonesia Chapter Jakarta
 date:   2017-04-25 09:49:07 +0700
+author: PhpId-Jakarta
 categories: ["community"]
 tags: [php indonesia, php community, phpid jakarta, programmer community]
 ---
-
-**Selamat datang di website official Php Indonesia Chapter Jakarta**
 
 
 ![php-indo-chapter-jakarta](https://raw.githubusercontent.com/phpid-jakarta/phpid-jakarta.github.io/master/assets/images/logo.png)
@@ -15,8 +14,9 @@ tags: [php indonesia, php community, phpid jakarta, programmer community]
 [**PHP Indonesia Chapter Jakarta**][phpid-jakarta] merupakan sub-regional dari komunitas PHP Indonesia untuk daerah Jakarta dan sekitarnya. Meskipun kami memiliki nama yang terkait dengan salah satu bahasa pemrograman web paling terkenal **PHP**, namun kami selalu terbuka terhadap semua kontribusi dari semua member. Member kami berasal dari berbagai kalangan dan latar belakang baik programmer dengan bahasa A, B atau C, baik seorang network engineer, manager bahkan sampai mahasiswa.
 
 
-Kami memiliki beberapa programm kerja seperti Kuliah WhatsApp setiap malam minggu, meetupu rutin yang menjadi sharing knowledge juga bagi member yang ada.
+Kami memiliki beberapa program kerja seperti Kuliah WhatsApp setiap malam minggu, meetup rutin yang menjadi sharing knowledge juga bagi member yang ada, serta sharing juga dalam berbagai hal terkait teknologi, hidup, atau bahkan pasangan.
 
+<a name='more'></a>
 
 Tujuan dibuatnya website ini sendiri antara lain :
 
