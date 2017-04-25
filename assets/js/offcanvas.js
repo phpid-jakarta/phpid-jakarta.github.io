@@ -34,14 +34,6 @@ $(window).on('load', function(){
           }
     });
 
-    // menu offcanvas click
-    $('.offcanvas li').on(eventtypeclick, function(evt){
-          var target = this;
-
-          hideOffCanvas();
-          return false;
-    });
-
     // overlay offcanvas click or touch
     $('.offcanvas__overlay').on(eventtypeclick, function(evt){
           hideOffCanvas();
