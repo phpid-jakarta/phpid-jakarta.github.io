@@ -6,6 +6,7 @@
 
   li {
     float: left;
+    margin-right: 10px;
 
     a {
       text-decoration: none;
@@ -16,15 +17,15 @@
 }
 
 .tag {
-  background: #eee;
+  background: #ddd;
   border-radius: 3px 0 0 3px;
   color: $grey-color;
   display: inline-block;
   height: 26px;
-  line-height: 26px;
-  padding: 0 20px 0 23px;
+  line-height: 26px;    
+  font-size: 12px;
+  padding: 0 15px 0 20px;
   position: relative;
-  margin: 0 10px 10px 0;
   text-decoration: none;
   -webkit-transition: color 0.2s;
 
@@ -53,7 +54,7 @@
   &::after {
     background: $background-color;
     border-bottom: 13px solid transparent;
-    border-left: 10px solid #eee;
+    border-left: 10px solid #ddd;
     border-top: 13px solid transparent;
     content: '';
     position: absolute;
