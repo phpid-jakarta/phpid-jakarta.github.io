@@ -7,7 +7,7 @@
 [![GitHub Contributors](https://img.shields.io/github/contributors/phpid-jakarta/phpid-jakarta.github.io.svg?maxAge=3600)](https://github.com/phpid-jakarta/phpid-jakarta.github.io/network/members)
 
 ## Homepage Website
-Website PHP Indonesia Chapter Jakarta bisa diakses di [https://jakarta.phpindonesia.or.id/](http://jakarta.phpindonesia.or.id/)
+Website PHP Indonesia Chapter Jakarta bisa diakses di [https://phpid-jakarta.github.io/](https://phpid-jakarta.github.io/)
 
 ## Tentang Kami
 
