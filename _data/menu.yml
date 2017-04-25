@@ -1,5 +1,5 @@
 - title: "Profil"
-  href: "#"
+  href: "#profil"
   sub:
   - title: "Tentang Kami"
     href: "tentang_kami.html"
@@ -10,7 +10,7 @@
   href: "program_kerja.html"
 
 - title: "Galeri"
-  href: "#"
+  href: "#gallery"
   sub:
   - title: "Foto"
     href: "galeri_foto.html"
