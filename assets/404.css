@@ -1,0 +1,29 @@
+.notfound__title{
+	font-size: 50px;	
+}
+.notfound__icon{
+	font-size: 150px;
+    color: #2a7ae2;
+}
+.notfound__icon:hover{
+    color: #5796e8;
+}
+.notfound__btn{
+	display: inline-block;
+	padding: 10px 60px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #2a7ae2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25em;
+}
+.notfound__btn:hover{
+    color: #fff;
+    background: #5796e8;
+}
