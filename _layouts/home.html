@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <link rel="stylesheet" type="text/css" 
+        href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+  <body>
+
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script type="text/javascript" 
+            src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" 
+            src="{{ "/assets/js/offcanvas.js" | relative_url }}" 
+            defer></script>
+    <script type="text/javascript" 
+            src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" 
+            defer></script>
+    <script type="text/javascript" 
+            src="{{ "/assets/js/slider.js" | relative_url }}" defer></script>
+  </body>
+
+</html>
