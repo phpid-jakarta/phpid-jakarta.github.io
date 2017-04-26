@@ -40,8 +40,47 @@
       </ul>
     </nav>
 
-    
+    <div class="nav__mobile">
+      <div class="nav__mobile-btn" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>    
 
   </div>
 
 </header>
+
+<nav class="offcanvas">
+  <div class="offcanvas__overlay"></div>
+
+  <ul class="offcanvas__menu">
+    {% for nav in site.data.menu %}
+        {% if nav.sub != null %}
+          <li>
+            <i class="ion-chevron-right"></i>
+            <a href="/{{ nav.href }}">{{ nav.title }}</a>
+            <ul>
+              <div>
+                {% for sub in nav.sub %}
+                  <li>
+                    <i class="ion-chevron-right"></i>
+                    <a href="/{{ sub.href }}">
+                    {{ sub.title }}
+                    </a>
+                  </li>
+                {% endfor %}                  
+              </div>
+            </ul>
+          </li>
+        {% else %}
+          <li>
+            <i class="ion-chevron-right"></i>
+            <a href="/{{ nav.href }}">{{ nav.title }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+  </ul>    
+</nav>

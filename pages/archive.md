@@ -15,7 +15,8 @@ permalink: arsip.html
      {% for pt in post.categories %}
     {% if nt == pt %}
       <li>
-        {{post.published}} <a href="{{ post.url }}">{{ post.title }}</a>
+        {{ post.date | date: "%b %-d, %Y" }} - 
+        <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endif %}  
    {% endfor %} 
@@ -33,7 +34,10 @@ permalink: arsip.html
 {% for post in site.posts %}
 	{% for pt in post.tags %}
 		{% if nt == pt %}
-			<li><a id="#tag-{{pt | downcase | replace: ' ', '_'}}" href="{{ post.url }}">{{ pt }}</a></li>
+			<li>
+        {{ post.date | date: "%b %-d, %Y" }} - 
+        <a id="#tag-{{pt | downcase | replace: ' ', '_'}}" href="{{ post.url }}">{{ post.title }}</a>
+      </li>
 		{% endif %}  
 	{% endfor %} 
 {% endfor %}

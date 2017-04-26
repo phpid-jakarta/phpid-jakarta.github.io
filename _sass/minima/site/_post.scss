@@ -4,7 +4,15 @@
  */
 
 .post
-{
+{ 
+    width: 80%;
+    margin: 2em auto 0;
+    @include media-query($on-palm)
+    {
+        width: 100%;
+    }
+
+
     &--card
     {
         margin-bottom: 20px;
@@ -20,11 +28,13 @@
             box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
         }
     }
+
     &__meta
     {
         font-size: $small-font-size;
         color: $grey-color;
     }
+
     &__link
     {
         font-size: 24px;

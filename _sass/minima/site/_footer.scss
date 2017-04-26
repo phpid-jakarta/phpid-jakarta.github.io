@@ -17,7 +17,7 @@
     {
         font-size: 15px;
         color: $grey-color;
-        @extend %clearfix;
+        @include clearfix();
     }
     &__social
     {
