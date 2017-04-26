@@ -38,6 +38,4 @@ $(window).on('load', function(){
     $('.offcanvas__overlay').on(eventtypeclick, function(evt){
           hideOffCanvas();
     });
-
 });
-
