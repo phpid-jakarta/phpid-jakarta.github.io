@@ -9,7 +9,8 @@ layout: home
 </div>
 
 <div class="home">
-	{% for post in paginator.posts %}
+	{% assign sorted = (paginator.posts | sort: 'date' | reverse) %}
+    {% for post in sorted %}
 		
 		<article class="post--card">
 

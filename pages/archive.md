@@ -10,17 +10,18 @@ permalink: arsip.html
 {% assign nt = cat[0] %}
 
 #### {{ nt }} {#cat-{{nt}}}
-<ul> 
-  {% for post in site.posts %}
-     {% for pt in post.categories %}
-    {% if nt == pt %}
-      <li>
-        {{ post.date | date: "%b %-d, %Y" }} - 
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endif %}  
-   {% endfor %} 
-  {% endfor %}
+<ul>
+	{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+	{% for post in sorted %}
+		{% for pt in post.categories %}
+			{% if nt == pt %}
+			<li>
+				{{ post.date | date: "%b %-d, %Y" }} - 
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+			{% endif %}  
+		{% endfor %} 
+	{% endfor %}
 </ul>  
 {% endfor %}
 
@@ -31,7 +32,8 @@ permalink: arsip.html
 
 #### {{ nt }} {#tag-{{nt | downcase | replace: ' ', '_'}}}
 <ul> 
-{% for post in site.posts %}
+{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+{% for post in sorted %}
 	{% for pt in post.tags %}
 		{% if nt == pt %}
 			<li>
