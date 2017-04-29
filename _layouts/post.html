@@ -8,19 +8,73 @@ comments: true
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
     <p class="post__meta">
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      <i class="ion-calendar"></i>&nbsp;&nbsp;{{ page.date | date: "%b %-d, %Y" }}
-    </time>
-    {% if page.author %}
-    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-      &nbsp;&nbsp;<i class="ion-person"></i>
-      &nbsp;&nbsp;<span itemprop="name">{{ page.author }}</span>
-    </span>
-    {% endif %}</p>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        <i class="ion-calendar"></i>&nbsp;&nbsp;{{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      {% if page.author %}
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        &nbsp;&nbsp;<i class="ion-person"></i>
+        &nbsp;&nbsp;<span itemprop="name">{{ page.author }}</span>
+      </span>
+      {% endif %}
+
+      {% if page.comments != false and jekyll.environment == "production" %}        
+        <a href="{{ page.url }}#disqus_thread">
+          &nbsp;&nbsp;<i class="ion-chatbubbles"></i>
+          &nbsp;&nbsp;0 Komentar
+        </a>
+      {% endif %}
+
+      <nav class="breadcrumb">     
+
+        <a href="/">
+          <i class="ion-home"></i>
+          Home
+        </a>
+
+        <i class="ion-chevron-right"></i>
+
+        {% if page.categories %}
+            {% for category in page.categories %}
+
+              {% for categoryStatic in site.data.category %}
+                {% if categoryStatic.category == category %}
+                  
+                    <a href="{{ categoryStatic.href }}">
+                      {{ category }}
+                    </a>
+                    <i class="ion-chevron-right"></i>
+
+                {% endif %}  
+              {% endfor %}
+
+            {% endfor %}
+        {% endif %}
+
+        <a href="{{ page.url }}">
+          {{ page.title | escape }}
+        </a>
+
+      </nav>
+
+    </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
+
+
+    <!-- TAGS -start -->
+    {% if page.tags %}
+      <ul class="tags">
+      <li>Tags :   </li>
+      {% for tag in page.tags %}
+        <li><a href="/arsip.html#tag-{{tag | downcase | replace: ' ', '_'}}" class="tag">{{ tag }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+    <!-- TAGS -end -->
+
   </div>
 
   {% if site.disqus.shortname %}

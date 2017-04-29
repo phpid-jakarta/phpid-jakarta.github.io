@@ -1,0 +1,49 @@
+.home
+{
+    &__section
+    {
+        @include row();
+        padding: 2em;        
+
+        h2{
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
+    &__desc
+    {
+        width : 800px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-query($on-palm)
+        {
+            width : 80%;
+        }
+    }
+
+    &__program
+    {
+        width : 800px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-query($on-palm)
+        {
+            width : 80%;
+        }
+    }
+
+    &__member
+    {
+        width : 800px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include media-query($on-palm)
+        {
+            width : 80%;
+        }
+    }
+}

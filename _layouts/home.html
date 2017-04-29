@@ -1,41 +1,31 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
+  {% include head.html %}
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+  <link rel="stylesheet" type="text/css" 
+        href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+  <body>
 
-        <i class="ion-ios-clock-outline"></i> 
-        <span class="post-meta">
-          {{ post.date | date: "%b %-d, %Y" }}
-        </span>
+    {% include header.html %}
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+    <main class="page-content" aria-label="Content">
+      {{ content }}
+    </main>
 
-    		<article class="post">
-    			<div class="post-content">
-    				{{ post.excerpt }}
-    				<p class="right">
-              <a href="{{site.baseurl}}{{ post.url }}" class="post__more">
-                Read More
-              </a>
-            </p>
-    			</div>
-    		</article>
+    {% include footer.html %}
 
-      </li>
-    {% endfor %}
-  </ul>
+    <script type="text/javascript" 
+            src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" 
+            src="{{ "/assets/js/offcanvas.js" | relative_url }}" 
+            defer></script>
+    <script type="text/javascript" 
+            src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js" 
+            defer></script>
+    <script type="text/javascript" 
+            src="{{ "/assets/js/slider.js" | relative_url }}" defer></script>
+  </body>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
-</div>
+</html>
