@@ -75,3 +75,10 @@
          -o-transition:      -o-transform $transition;
             transition:         transform $transition;
 }
+
+@mixin transform($value){
+  -webkit-transform: ($value);
+     -moz-transform: ($value);
+      -ms-transform: ($value);
+          transform: ($value);
+}

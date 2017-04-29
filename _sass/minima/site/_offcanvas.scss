@@ -1,0 +1,62 @@
+.offcanvas
+{
+    position: fixed;
+    top: 80px;
+    right: 0;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    @include transition(all .5s);
+    @include translate3d(100%, 0, 0);
+
+
+    &--opened
+    {
+        @include translate3d(0, 0, 0);
+
+        .offcanvas__overlay
+        {
+            opacity: 1;
+        }
+    }
+
+    &__overlay
+    {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    &__menu
+    {
+        @include transition(all .5s);
+
+        float: right;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+        height: 100%;
+        background-color: $text-color;
+        list-style: none;
+
+        & > li
+        {
+            display: block;
+            padding: 20px 0 0 1em;
+
+            a, i
+            {
+                color: #fff;
+                text-decoration: none;
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+
+            i{
+                padding-right: 10px;
+            }
+        }
+    }
+
+}

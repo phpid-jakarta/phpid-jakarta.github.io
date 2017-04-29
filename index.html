@@ -1,13 +1,18 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: default
+layout: home
 ---
+
+<div class="slider">	
+	{% for slider in site.data.slider %}
+		<img class="slider__item" src="{{ slider.src }}">
+	{% endfor %}
+</div>
+
 <div class="home">
-	{% for post in paginator.posts %}
+	{% assign sorted = (paginator.posts | sort: 'date' | reverse) %}
+    {% for post in sorted %}
 		
-		<article class="post post--card">
+		<article class="post--card">
 
 			<span class="post__meta">
 				<i class="ion-calendar"></i>&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }}
@@ -24,7 +29,7 @@ layout: default
 
 			{% if page.comments != false and jekyll.environment == "production" %}				
 				<a class="post__meta" href="{{site.baseurl}}{{ post.url }}#disqus_thread">
-					&nbsp;&nbsp;<i class="ion-chatboxes"></i>
+					&nbsp;&nbsp;<i class="ion-chatbubbles"></i>
 					&nbsp;&nbsp;0 Komentar
 				</a>
 			{% endif %}
