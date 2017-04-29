@@ -15,13 +15,25 @@
 
     &--card
     {
-        margin-bottom: 20px;
+        margin-right: 1em;
         padding: 20px;
         transition: .3s;
         border: 1px solid rgba(0,0,0,.09);
         background: #fff;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
         @include border-radius(.25em);
+    
+        height: 600px;
+        overflow: auto;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+
+        @include media-query($on-palm)
+        {
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
         &:hover
         {
