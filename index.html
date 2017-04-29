@@ -2,10 +2,21 @@
 layout: home
 ---
 
-<div class="slider">	
-	{% for slider in site.data.slider %}
-		<img class="slider__item" src="{{ slider.src }}">
-	{% endfor %}
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+			{% for slider in site.data.slider %}
+				<div class="swiper-slide">
+					<div class="swiper-inner" data-animate="{{ slider.animation }}">
+						<div class="swiper-title">{{ slider.title }}</div>
+						<div class="swiper-caption">{{ slider.caption }}</div>
+					</div>
+					<img class="" src="{{ slider.src }}">
+				</div>
+			{% endfor %}
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
 </div>
 
 <div class="home__section">
@@ -46,9 +57,9 @@ layout: home
 
 	<div class="home">
 		{% assign sorted = (paginator.posts | sort: 'date' | reverse) %}
-	    {% for post in sorted %}
+	  {% for post in sorted %}
 			
-			<article class="post--card">
+			<!-- <article class="post--card">
 
 				<span class="post__meta">
 					<i class="ion-calendar"></i>&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }}
@@ -82,8 +93,7 @@ layout: home
 						</a>
 					</p>
 				</div>
-			</article>
-
+			</article> -->
 		{% endfor %}
 		
 		{% include paginator.html %}
