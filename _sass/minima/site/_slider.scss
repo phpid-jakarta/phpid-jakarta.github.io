@@ -1,38 +1,79 @@
-.slider {
-    width: 100%;
-    margin-bottom: 20px;
-
-    &__item {
-        width: 100%;
-    }
-}
-
-.slick-prev,
-.slick-next
+.swiper-container
 {
-    position: absolute;
-    z-index: 10;
-    top: 30%;
-    color: #fff;
-    font-size: 70px;
-    opacity: .5;
-    cursor: pointer;
-    padding: 5px 20px;
-    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 600px;
 
-    @include media-query($on-palm)
+    @include media-query($on-palm) {
+        height: auto;
+    }
+
+    .swiper-slide
     {
-        font-size: 40px;
-    }
+        text-align: center;
+        font-size: 18px;
+        background-color: $gunmetal;
+        position: relative;
 
-    &:hover {
-        color: #fff;
-        opacity: 1;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        .swiper-inner {
+            position: absolute;
+            width: 75%;
+            color: #fff;
+            z-index: 10;
+            display: block;
+            text-align: left;
+
+            @include media-query($on-palm) {
+                width: 90%;
+            }
+
+            .swiper-title {
+                width: 75%;
+                padding: 10px 20px;
+                background-color: transparentize($carolina, 0.4);
+                margin-bottom: 10px;
+
+                @include media-query($on-palm) {
+                    width: 90%;
+                    text-align: center;
+                }
+            }
+            .swiper-caption {
+                padding: 20px;
+                background-color: transparentize(#fff, 0.8);
+                
+                @include media-query($on-palm) {
+                    display: none;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
     }
-}
-.slick-prev {
-    left: 20px;
-}
-.slick-next {
-    right: 20px;
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+
+            &-active {
+                background-color: #fff;
+            }
+        }
+    }
 }

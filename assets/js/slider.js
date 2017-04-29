@@ -1,15 +1,27 @@
 'use strict';
 
-window.onload = function(){    
+(function(){
+  var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      spaceBetween: 0,
+      autoplay: 3000,
+      loop: true
+  });
 
-//SLIDER CAROUSEL
-        if(typeof $('.slider').slick !== "undefined"){
-            $('.slider').slick({
-                autoplay: true,
-                arrows: true,
-                prevArrow: '<a class="slick-prev"><i class="ion-chevron-left"></i></a>',
-                nextArrow: '<a class="slick-next"><i class="ion-chevron-right"></i></a>'
-            });
-        }
+  swiper
+    .on('onSlideChangeStart', function(e) {
+      $('.swiper-inner').hide();
+      var target = $(e.slides[e.activeIndex - 1]).find('.swiper-inner'),
+          animate = target.data('animate');
 
-}
+      target.removeClass('animated ' + animate);
+    })
+    .on('onSlideChangeEnd', function(e) {
+      $('.swiper-inner').show();
+      var target = $(e.slides[e.activeIndex]).find('.swiper-inner'),
+          animate = target.data('animate');
+
+      target.addClass('animated ' + animate);
+    });
+})();
