@@ -1,7 +1,7 @@
 .swiper-container
 {
     width: 100%;
-    height: 600px;
+    height: 500px;
 
     @include media-query($on-palm) {
         height: auto;
@@ -10,7 +10,7 @@
     .swiper-slide
     {
         text-align: center;
-        font-size: 18px;
+        font-size: 14px;
         background-color: $gunmetal;
         position: relative;
 
@@ -45,6 +45,7 @@
                 padding: 10px 20px;
                 background-color: transparentize($carolina, 0.4);
                 margin-bottom: 10px;
+                font-size: 18px;
 
                 @include media-query($on-palm) {
                     width: 90%;
@@ -67,6 +68,7 @@
         }
     }
     .swiper-pagination {
+        bottom: 40px !important;
         .swiper-pagination-bullet {
             width: 12px;
             height: 12px;
