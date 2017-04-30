@@ -1,14 +1,24 @@
-- caption: ""
+- title: "Inventore totam dolor atque."
+  animation: 'fadeInUp'
+  caption: "Quos omnis similique accusamus ab perspiciatis, praesentium facilis, suscipit tempora hic harum quisquam quasi cupiditate? Quos cupiditate commodi quam. Ipsam temporibus, qui."
   src: "/assets/images/slider/phpid-jakarta-slider-1.jpg"
 
-- caption: ""
+- title: "Earum officiis inventore consequuntur."
+  animation: 'flipInX'
+  caption: "Earum iusto enim doloribus, animi eos aut corrupti quo voluptatem vero consequuntur commodi dolorum nemo dolores ullam ipsa, quos veniam. Sunt, voluptate."
   src: "/assets/images/slider/phpid-jakarta-slider-2.jpg"
 
-- caption: ""
+- title: "Aspernatur aperiam sint, ist."
+  animation: 'lightSpeedIn'
+  caption: "Ducimus laborum unde aliquid minus. Quaerat praesentium in doloremque neque aperiam molestiae! Itaque eum, quod accusantium culpa assumenda dolore sint, consectetur voluptatibus."
   src: "/assets/images/slider/phpid-jakarta-slider-3.jpg"
 
-- caption: ""
+- title: "Repellat ut rem dolorum qu."
+  animation: 'slideInUp'
+  caption: "Veritatis corporis earum adipisci ea error pariatur dolor blanditiis sequi rerum cumque quas illo consectetur dolores reprehenderit distinctio eum, harum ipsam dolorem!"
   src: "/assets/images/slider/phpid-jakarta-slider-4.jpg"
 
-- caption: ""
+- title: "Deleniti minus amet fugiat voluptatu."
+  animation: 'zoomIn'
+  caption: "Harum, vel, modi. Non velit eum dolor placeat molestias delectus, obcaecati assumenda animi accusamus ex iste. Rerum harum aperiam esse accusantium recusandae!"
   src: "/assets/images/slider/phpid-jakarta-slider-5.jpg"
