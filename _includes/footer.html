@@ -25,9 +25,20 @@
       <div class="col-md-6 col-sm-6">
           <div class="footer__box">
             <div class="footer__box__title_line">
-              PHP Indonesia Regional
+              PHP Comunity
             </div>
-            <div class="footer__box__content">
+            <div class="footer__box__content_comunity">
+              <div class="row">
+              {% for coumnity in site.data.comunity %}
+                <div class="col-md-4">
+                  <div class="imageCenter">
+                    <a href="{{ coumnity.href }}">
+                      <img src="{{ coumnity.src }}" alt="{{ coumnity.name }}">
+                    </a>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
             </div>
           </div>
       </div>
@@ -47,36 +58,15 @@
           </div>
           <div class="footer__box__content_sponsor">
             <div class="row">
-              <div class="col-md-2 col-sm-2">
+              {% for sponsor in site.data.sponsorship %}
+              <div class="col-md-3">
                 <div class="imageCenter">
-                  <img src="{{ site.sponsor.microsoft }}" alt="">
+                  <a href="{{ sponsor.href }}">
+                    <img src="{{ sponsor.src }}" alt="{{ sponsor.name }}">
+                  </a>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.ibm }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.tech_in_asia }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.codepolitan }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.max_server }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.warungssl }}" alt="">
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
