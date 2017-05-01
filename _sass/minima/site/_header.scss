@@ -3,14 +3,13 @@
  */
 .header
 {
+    @include transition(all 0.2s ease-in-out);
     position: fixed;
     z-index: 100;
     top: 0;
     width: 100%;
     height: 5em;
-    background: #fff;
-
-    @include box-shadow(0 1px 2px rgba(0,0,0,.075));
+    background: transparentize(#fff, 0.8);
 
     &__wrapper
     {
@@ -26,6 +25,7 @@
         img
         {
             height: 3em;
+            filter: invert(100%);
         }
     }
     &__title
@@ -36,6 +36,27 @@
         @include media-query($on-palm)
         {
             display: none;
+        }
+    }
+}
+
+.header.--default {
+    background: #fff;
+    @include box-shadow(0 1px 10px 2px rgba(0,0,0,0.2));
+
+    .header__brand
+    {
+        img {
+            filter: invert(0%);
+        }
+    }
+    .menu__link
+    {
+        color: transparentize($brand-color, 0.3);
+
+        &:hover
+        {
+            color: transparentize($brand-color, 0.1);
         }
     }
 }

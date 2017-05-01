@@ -16,7 +16,7 @@
     &--card
     {
         margin-right: 1em;
-        padding: 20px;
+        // padding: 20px;
         transition: .3s;
         border: 1px solid rgba(0,0,0,.09);
         background: #fff;
@@ -26,7 +26,7 @@
         height: 600px;
         overflow: auto;
         display: inline-block;
-        width: 30%;
+        width: 100%;
         vertical-align: top;
 
         @include media-query($on-palm)
