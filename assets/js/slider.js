@@ -5,7 +5,7 @@
       pagination: '.swiper-pagination',
       paginationClickable: true,
       spaceBetween: 0,
-      autoplay: 3000,
+      autoplay: 4000,
       loop: true
   });
 

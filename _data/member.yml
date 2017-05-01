@@ -1,14 +1,23 @@
-- name: "A"
-  image_src: "/assets/images/slider/phpid-jakarta-slider-1.jpg"
+- name: "Jan Traynor"
+  jobs: "Developer"
+  image: "/assets/images/dummy/120x120.png"
 
-- name: "A"
-  image_src: "/assets/images/slider/phpid-jakarta-slider-2.jpg"
+- name: "Ashlea Derrickson"
+  jobs: "Developer"
+  image: "/assets/images/dummy/120x120.png"
 
-- name: "A"
-  image_src: "/assets/images/slider/phpid-jakarta-slider-3.jpg"
+- name: "Mauricio L."
+  jobs: "Developer"
+  image: "/assets/images/dummy/120x120.png"
 
-- name: "A"
-  image_src: "/assets/images/slider/phpid-jakarta-slider-4.jpg"
+- name: "Lala Elledge"
+  jobs: "Developer"
+  image: "/assets/images/dummy/120x120.png"
 
-- name: "A"
-  image_src: "/assets/images/slider/phpid-jakarta-slider-5.jpg"
+- name: "Charisse Sigala"
+  jobs: "Developer"
+  image: "/assets/images/dummy/120x120.png"
+
+- name: "Charisse Sigala"
+  jobs: "Developer"
+  image: "/assets/images/dummy/120x120.png"
