@@ -23,13 +23,6 @@ lang: id
 logo_url: /assets/images/phpid-jakarta.png
 logo_square_url: /assets/images/logo/phpid-jakarta-300x300.png
 #enforce_ssl: jakarta.phpindonesia.or.id
-sponsor:
-    codepolitan: /assets/images/sponsorship/sponsor_codepolitan.png
-    ibm: /assets/images/sponsorship/sponsor_ibm.png
-    max_server: /assets/images/sponsorship/sponsor_max_server.png
-    microsoft: /assets/images/sponsorship/sponsor_microsoft.png
-    tech_in_asia: /assets/images/sponsorship/sponsor_tia.png
-    warungssl: /assets/images/sponsorship/sponsor_warungssl.png
 
 excerpt_separator: <a name='more'></a>
 paginate: 5
