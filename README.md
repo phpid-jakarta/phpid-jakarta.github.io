@@ -27,6 +27,9 @@ Website PHP Indonesia Chapter Jakarta bisa diakses di [https://phpid-jakarta.git
 ## Setup project
 [https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Setup-Project](https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Setup-Project)
 
+## Jekyll & Liquid Cheatsheet
+[https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Jekyll-&-Liquid-Cheatsheet](https://github.com/phpid-jakarta/phpid-jakarta.github.io/wiki/Jekyll-&-Liquid-Cheatsheet)
+
 ## Join Us
 [![Facebook](https://img.shields.io/badge/PhpIdJakarta-Facebook-blue.svg?maxAge=3600)](https://facebook.com/profile.php?id=100011420743645) 
 [![Github](https://img.shields.io/badge/PhpIdJakarta-Github-lightgrey.svg?maxAge=3600)](https://github.com/phpid-jakarta) 
