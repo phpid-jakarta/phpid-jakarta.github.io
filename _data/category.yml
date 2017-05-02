@@ -1,14 +1,19 @@
 - category: "community"
   href: "/category/community.html"
+  icon: "ion-ios-people"
 
 - category: "kulwap"
   href: "/category/kulwap.html"
+  icon: "ion-social-whatsapp-outline"
 
 - category: "meetup"
   href: "/category/meetup.html"
+  icon: "ion-coffee"
 
 - category: "tutorial"
   href: "/category/tutorial.html"
+  icon: "ion-navigate"
 
 - category: "uncategories"
   href: "/category/uncategories.html"
+  icon: "ion-pie-graph"

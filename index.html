@@ -29,8 +29,22 @@ layout: home
 			<div class="col-md-12">
 				<div class="title">Tentang Kami</div>
 
-				<div class="">
-					<strong>PHP Indonesia Chapter Jakarta</strong> merupakan sub-regional dari komunitas PHP Indonesia untuk daerah Jakarta dan sekitarnya. Meskipun kami memiliki nama yang terkait dengan salah satu bahasa pemrograman web paling terkenal PHP, namun kami selalu terbuka terhadap semua kontribusi dari semua member. Member kami berasal dari berbagai kalangan dan latar belakang baik programmer dengan bahasa A, B atau C, baik seorang network engineer, manager bahkan sampai mahasiswa.
+				<div class="about__content">
+
+					{% for info in site.data.information %}
+						{% if info.info_title == "about_us" %}
+
+							{% if site.author %}
+					          <strong>{{ site.title | escape }}</strong>
+					        {% else %}					          
+					          <strong>{{ site.title | escape }}</strong>
+					        {% endif %}
+
+					        <span> {{ info.info_dec }} </span>
+
+						{% endif %}  
+					{% endfor %}
+
 				</div>
 			</div>
 		</div>
@@ -98,7 +112,8 @@ layout: home
 
 						{% if page.comments != false and jekyll.environment == "production" %}
 							<div class="meta__item">
-								<a href="{{site.baseurl}}{{ post.url }}#disqus_thread"><i class="ion-chatbubbles"></i> 0 Komentar</a>
+								<a href="{{site.baseurl}}{{ post.url }}#disqus_thread">
+								<i class="ion-chatbubbles"></i>  Komentar</a>
 							</div>
 						{% endif %}
 					</div>
