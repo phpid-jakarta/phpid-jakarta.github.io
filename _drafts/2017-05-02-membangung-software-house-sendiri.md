@@ -12,18 +12,21 @@ tags: [phpid jakarta, kulwap, software house]
 
 <a name='more'></a>
 
-Judul Kulwap : Membangun Software House Sendiri
-Pemateri : Muhammad Franky Fadholi
-Tanggal : 4 Februari 2017
-Moderator : Luphy
+#### Judul Kulwap : Membangun Software House Sendiri
+#### Pemateri : Muhammad Franky Fadholi
+#### Tanggal : 4 Februari 2017
+#### Moderator : Luphy
 
 
-Selamat malam semua, malam ini kita kulwap Bareng mas @Franky Fadholi.
+Selamat malam semua, malam ini kita kulwap Bareng mas **@Franky Fadholi**.
 Yuhuu kita bakal bahas tentang Membangun Softwere House Sendiri.
 Okelaahh yuuk kita kenalan dulu sama pematerinya... 
 
+
 Terima kasih atas waktunya saudari  Luphi, salam kenal saya Franky , malam ini saya akan sharing sedikit mengenai **Membangun Software House Sendiri**.
+
 Sudah banyak orang yang punya software house sendiri, tapi tidak apa apa,  saya akan share sedikit pengalaman yang saya punya.        
+
 Sebelumnya kita bahas dulu tentang apa itu Software House?
 
 
@@ -80,7 +83,7 @@ Tetapi untuk nilai project dibawah 10jt komisi semakin besar untuk programmer & 
 
 **_Kenapa???_**
 
-Supaya marketing dan programmer betah sama kita                      
+Supaya marketing dan programmer betah sama kita.           
 Itu contoh untuk komisi per project. Apabila kalian sudah yakin dengan pendapatan kalian atau sudah yakin dengan banyak project maka bisa dengan sistem gaji agar pendapatan bisa maksimal. Tetapi apabila belum yakin bisa dengan sistem komisi.
 
 
@@ -128,15 +131,24 @@ Untuk struktur organisasi yang saya terapkan sebagai berikut :
 **T** - **Fredy** : Kalau tidak terkejar di sebuah project bagaimana cara handle nya?           
 **J** - **Frankky Fadholi** :  
 1. Marketing mencari order, marketing paling tidak harus tau sedikit saja tentangg dunia IT.Marketing bisa dari siapapun tidak harus dari kita. Ketika sudah mendapatkannya consultant menerjemahkan apa yang  client mau. Kalau tidak terkejar atau overload kita tetap ambil, namun kita bisa lempar ke developer lain dengan konsekuensi komisi kita sedikit.
+
 2. Nah setelah itu diserahkan ke Project Manager. Kemudian diusulkan tawaran harga. Setelah itu  diajukan ke bagian keuangan dan di ACC oleh Direktur untuk approve harga. Setelah mendapatkan harga maka akan dikembalikan lagi ke marketing untuk nego harga dengan client. Tugas marketing yang berat, yaitu deal harga sesuai approve direktur. Apabila tidak ya pastinya bisa diskusi lagi sampai dicapai kesepakatan harga.
+
 3. Selanjutnya ketika sudah approved kemudian consultant menganalisa sesuai kebutuhan client. Ketemu tidak hanya sekali untuk bicara masalah flow.
+
 4. Apabila sudah maka dibuatlah perjanjian kontrak antara client dengan perusahaan . Dalam isi perjanjian tersebut  berisikan menu-menu, fitur-fiture, module-module  yang diinginkan client.  
-5. Setelah itu proses pembuatan , Eh sory salah setelah itu client transfer DP dulu ya jangan  sampai lupa..!!!!   
+
+5. Setelah itu proses pembuatan , Eh sory salah setelah itu client transfer DP dulu ya jangan  sampai lupa..!!!! 
+
 6. Baru masuk pembuatan. Jangan sampai balik ke analisa lagi, karena akan memakan waktu dan biaya.  Makanya  harus fix pada fase analisa, baik itu menu, module, ataupun perhitungan-perhitungannya.
+
 7. Setelah itu testing user....User test program atau system yang telah dibuat. Apabila sudah fix maka dianggap finish. 
+
 8. Setelah finish maka membuat tutorial singkat di buat dokumen atau help. 
+
 9. Kemudian memberikan berita acara serah terima program yang sudah selesai dikerjakan.
-10. Selanjutnya proses training. Untuk training biasanya 2x per 3 jam.                  Apabila lebih maka kena cash lagi untuk training.                       
+
+10. Selanjutnya proses training. Untuk training biasanya 2x per 3 jam. Apabila lebih maka kena cash lagi untuk training.                       
 
 
 Nah semua sudah saya jelaskan, semua terserah bagaimana kalian akan menerapkan sistemnya baik dengan gaji maupun dengan komisi, ada plus minusnya. Baik dengan sistem bagaimanapun kalian yang jalankan .                     
@@ -162,5 +174,7 @@ Kalau yang standard seperti company profile yah itungan per menu
 **J** - **Frankky Fadholi** : Cv kan ada 2 orang minimal yang terlibat, Komisaris dan Direktur                       
 
 Oke cukup ya...
+
 Terima kasih atas waktunya...
+
 Saya tutup kulwap malam ini...
