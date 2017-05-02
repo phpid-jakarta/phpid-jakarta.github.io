@@ -7,18 +7,15 @@
             Sosial Media
           </div>
           <div class="footer__content">
-            <a href="{{ site.facebook_url }}" class="footer__social is--fb" target="_blank">
-              <i class="ion-social-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com/php_indonesia" class="footer__social is--tw" target="_blank">
-              <i class="ion-social-twitter"></i>
-            </a>
-            <a href="https://github.com/{{ site.github_username }}" class="footer__social is--gh" target="_blank">
-              <i class="ion-social-github"></i>
-            </a>
-            <a href="{{ "/feed.xml" | relative_url }}" class="footer__social is--rss" target="_blank">
-              <i class="ion-social-rss"></i>
-            </a>
+
+            {% for sosial in site.data.sosial_media %}
+              <a href="{{ sosial.href }}" 
+                 class="footer__social {{ sosial.custom_class }}" 
+                 target="_blank">
+                <i class="{{ sosial.icon }}"></i>
+              </a>
+            {% endfor %}
+            
           </div>
         </div>
       </div>
