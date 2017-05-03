@@ -12,12 +12,6 @@ tags: [phpid jakarta, kulwap, software house]
 
 <a name='more'></a>
 
-#### Judul Kulwap : Membangun Software House Sendiri
-#### Pemateri : Muhammad Franky Fadholi
-#### Tanggal : 4 Februari 2017
-#### Moderator : Luphy
-
-
 Selamat malam semua, malam ini kita kulwap Bareng mas **@Franky Fadholi**.
 Yuhuu kita bakal bahas tentang Membangun Softwere House Sendiri.
 Okelaahh yuuk kita kenalan dulu sama pematerinya... 
