@@ -19,7 +19,7 @@ Sebelumnya kita akan membahas mengenai Basic Bash Programming...
 Oke kita mulai.                        
 Basic Bash Programming adalah salah satu bahasa bash program dan merupakan bahasa umum yang digunakan dalam distro linux. Di dalam UNIX Systems terdapat beberapa jenis tipe bash itu sendiri,  misal saya menggunakan Distro Ubuntu 16.x  maka ketika saya jalankan perintah :
 
-{% highlight bash %}
+```bash
 
 cat /etc/bashs 
 # /etc/bashs: valid login bashs
@@ -28,10 +28,12 @@ cat /etc/bashs
 /bin/bash
 /bin/rbash
 
-{% endhighlight %}
+```
 
-hasilnya seperti itu                      
+hasilnya seperti itu               
+
 …………………………gambar…………………………………………………
+
 Ada `/bin/sh, dash,bash, rbash`                    
 
 Selain dari itu, ada pula jenis bash yang lain seperti :
@@ -71,7 +73,8 @@ Sebelumnya, adakah yang disini pengguna bash ? atau senantiasa menggunakan bash 
 Oke lanjut klo gitu.  Bash, saya biasa menggunakan bash untuk melakukan otomasi terhadap sistem Linux yang saya pakai. Mulai dari untuk backup, untuk check security system dll. Nah disini akan kita bahas, bagaimana menggunakan basic bash itu sendiri.
 Saya anggap semua uda didepan komputer masing2.          
 kita buat folder belajar dan buat file tes.sh:
-```
+
+```bash
 mkdir belajar
 touch tes.sh
 ```
@@ -82,38 +85,44 @@ touch tes.sh
 
 kalau sudah kita vim tes.sh monggo gunakan editor kesukaan masing-masing, pake nano, vim, geany, npp, dll dan isikan konten berikut :
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 echo "Hello World"
 echo Hello World
 echo 'Hello World'
-{% endhighlight %}
+```
                    
 …………………………gambar…………………………………………………
+
 
 **R**  Adzim: Enggak chmod om.?                       
 **J** nanti dulu, klo sudah monggo di execute : bash tes.sh                      
 
 …………………………gambar…………………………………………………
+
 **R**  Adzim: Siappp om                  
 
-Untuk melihat step by step execute monggo gunakan bash -x tes.sh                      
+Untuk melihat step by step execute monggo gunakan bash -x tes.sh  
+
 …………………………gambar…………………………………………………
+
 Apa hasilnya ?                        
 
 **R** Adzim: Ada plus nya om di depan echo                      
 **J** : uda dicoba belum ? ya itu adalah instruksi yang dieksekusi oleh bash.                       
 **R** + instruksi
-bla.. bla... -> ini adalah outputnya      
+bla.. bla... -> ini adalah outputnya   
+
 …………………………gambar…………………………………………………                
 
 Sekarang kita ganti kontennya sbb:
-{% highlight bash %}
+
+```bash
 #!/bin/bash
 echo Hallo $USER
 echo "Hallo $USER"
 echo 'Hallo $USER'
-{% highlight %}
+```
 
 Silahkan, sampaikan argumen masing-masing hasil dari eksekusi diatas. 
 Apa kesimpulan yg bisa didapat dari command diatas?                      
@@ -123,17 +132,17 @@ Apa kesimpulan yg bisa didapat dari command diatas?
 **T** lah hasilnya gimana ? apa kesimpulannya ?                       
 **R**  Adzim: ehh USER yang aktif yak om.?                        
 **R** Adzim: Hallo jukir
-```
+```bash
 Hallo jukir
 Hallo $USER     
 ```                  
-      karena user  nya jukir                        
+karena user  nya jukir                        
 **R**  Adzim: Hallo root
-```
+```bash
  Hallo root
  Hallo $USER    
  ```                    
-      ini kalo root om                     
+ini kalo root om                     
 **T**  trus apa kesimpulan dari 3 perintah itu ?                       
 **R**   Om Ronald Simanjuntak: Kalau pakai ' variable sistem tidak diproses, tapi dianggap sebagai string   biasa                       
 **R**  Adzim: 1. `$USER` berarti ngambil user aktif, 
@@ -167,18 +176,21 @@ stdin akan berisi value bila ia menerima input dari user.
                     
 Balik lagi ke bash. Sekarang kita uban kontent tes.sh                      
 mari kita ubah konten tes.sh menjadi :
-{% highlight bash %}
+```bash
 #!/bin/bash
-{% endhighlight %}
+```
+
 …………………………gambar…………………………………………………
 
+```bash
 read -p "Masukkan nama anda ($USER) : " nama
 echo "Nama anda : $nama"
 printf "%s : %s\n" "Nama anda (printf)" $nama
+```
 
 …………………………gambar…………………………………………………
 
-Nanti kita akan masuk dan melihat dimana sih stdin, stdout, dan stderr                       
+Nanti kita akan masuk dan melihat dimana sih `stdin`, `stdout`, dan `stderr`                      
 
 Apa hasilnya ?    Setelah dieksekusi ?                       
 
@@ -196,21 +208,24 @@ pake echo dan printf .
 **J** yap, jangan lupa. printf ada format string disitu.                        
 **R**  Adzim: enggak beda om kalau dipake huruf atau angka                
 Kesimpulan dari konten echo dan printf:
+
 1. Kita mengambil input dari user, itu adalah stdin.
 2. Kita menampilkan variable hasil stdin itu adalah stdout.
 3. penggunaan echo dan printf berbeda.                       
 
 Trus gimana menggunakan `stdin`, `stdout` dan `stderr` ini dalam bash script ?
+
 Menggunakan `stdin` biasa dimulai dengan 0<
 Menggunakan `stdout` biasa dimulai dg 1>
 Menggunakan `stderr` biasa dimulai dg 2>                      
 
 Mari kita tes, silahkan eksekusi perintah berikut:
-{% highlight bash %}
+
+```bash
 echo "Hallo bro" > tes.txt
 cat tes.txt
 cat 0< tes.txt
-{% endhighlight %}
+```
                         
 **T** apa hasilnya ?                       
 **R**  Ashokani: hasilnya ya Hallo bro                       
@@ -225,10 +240,11 @@ cat 0< tes.txt
        sudah seharusnya, nah saya ingin menyimpan hasil error itu ke file error_log gimana carany ?                       
 
 caranya gampang :
-{% highlight bash %}
+
+```bash
 las "hallo" 2>error_log
 cat error_log
-{% endhighlight %}
+```
 
 coba gimana hasilnya ?                     
 **R**   Adzim: las: command not found Om 
@@ -248,7 +264,7 @@ Sekarang variable dan local variable.
 
 Sekarang kita ganti konten tes.sh menjadi :
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 HELLO=Hello 
 function hello {
@@ -258,7 +274,7 @@ function hello {
 echo $HELLO
 hello
 echo $HELLO
-{% highlight %}
+```
                  
 apa hasilnya ? trus coba dihapus tulisan local apa hasilnya ?                       
 
@@ -285,13 +301,13 @@ Eh sebelum masuk situ, kita belajar dulu command subtitution
 
 ubah kontent tes.sh menjadi :
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 mydir=$(pwd)
 echo "Lokasi mydir : $mydir"
 echo "Lokasi mydir : $(pwd)"
 echo "Lokasi mydir : `pwd`"
-{% endhighlight %}
+```
                      
 coba cek hasilnya.                       
 
@@ -308,13 +324,14 @@ Nah, itu adalah command subtitution
  Bila ingin menyimpan hasil suatu perintah kedalah variable gunakan `$(command)`                       
 
 …………………………gambar…………………………………………………
+
 Lanjut sekarang tambahkan di konten tes.sh:
 
-{% highlight bash %}
+```bash
 echo 1+1
 echo $((1+1))
 echo $[1+1]
-{% endhighlight %}
+```
                      
 apa hasilnya ?                       
 itu adalah penerapan arithmetic evaluation 
@@ -332,7 +349,7 @@ itu bedanya cuma cara panggilnya, secara fungsi sama.
 **R**  Adzim: waduuh,                      
 Oke. kita coba bikin script backup pake bash script, ubah tes.sh:
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 backupdir=$(pwd)
@@ -342,7 +359,7 @@ echo "Backup $backupdir in progress..."
 echo
 tar -czvf $outputfile $backupdir > /dev/null 2>&1
 echo "Lokasi hasil backup : $outputfile"
-{% endhighlight %}
+```
      
 Apa hasilnya ? dimana hasilnya ?                      
 
