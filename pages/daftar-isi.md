@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Daftar Isi
-permalink: daftar_isi.html
+permalink: daftar-isi.html
 ---
 <div class="home">
 
