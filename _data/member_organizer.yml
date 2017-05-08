@@ -6,6 +6,14 @@
   gh_url: "https://github.com/ekojs"
   ins_url: "https://instagram.com/"
 
+- name: "Ashokani"
+  jobs: "Software Engineer"
+  image: "/assets/images/member/organizer/ashokani.png"
+  fb_url: "https://facebook.com/"
+  tw_url: "https://twitter.com/"
+  gh_url: "https://github.com/"
+  ins_url: "https://instagram.com/"
+
 - name: "Deroh"
   jobs: "Customer Care at PT. Aplikanusa Lintasarta"
   image: "/assets/images/member/organizer/deroh.jpg"
@@ -16,7 +24,7 @@
 
 - name: "Anne Regina"
   jobs: "Head of FemaleGeek Php Indonesia"
-  image: "/assets/images/member/organizer/anne.jpg"
+  image: "/assets/images/member/organizer/anne.png"
   fb_url: "https://facebook.com/annereginancy"
   tw_url: "https://twitter.com/"
   gh_url: "https://github.com/annegii"
