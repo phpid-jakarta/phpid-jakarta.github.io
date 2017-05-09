@@ -2,7 +2,7 @@
 layout: post
 title:  Basic Bash Programming
 date:   2017-05-04 09:49:07 +0700
-author: PhpId-Jakarta
+author: Eko Junaidi S
 categories: ["kulwap"]
 tags: [phpid jakarta, kulwap, basic bash]
 ---

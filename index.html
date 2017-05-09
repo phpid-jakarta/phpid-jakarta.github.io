@@ -93,7 +93,7 @@ layout: home
 	<div class="title">Artikel Terbaru</div>
 	<div class="row">
 		{% assign sorted = (paginator.posts | sort: 'date' | reverse) %}
-	  {% for post in sorted %}
+	  	{% for post in sorted %}
 			<div class="col-md-3 col-sm-6">
 				<div class="article">
 					<div class="article__title">
@@ -110,12 +110,6 @@ layout: home
 							</div>
 						{% endif %}
 
-						{% if page.comments != false and jekyll.environment == "production" %}
-							<div class="meta__item">
-								<a href="{{site.baseurl}}{{ post.url }}#disqus_thread">
-								<i class="ion-chatbubbles"></i>  Komentar</a>
-							</div>
-						{% endif %}
 					</div>
 					<div class="article__description">
 						{{ post.excerpt }}
