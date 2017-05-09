@@ -2,7 +2,7 @@
 layout: post
 title:  Membangun Software House Sendiri
 date:   2017-05-02 09:49:07 +0700
-author: PhpId-Jakarta
+author: Franky Fadholi
 categories: ["kulwap"]
 tags: [phpid jakarta, kulwap, software house]
 ---
