@@ -20,7 +20,7 @@ tags: [phpid jakarta, kulwap, react]
 
 Bismillah..
 
-Assalamu &#39;alaikum sadayana.. ??
+Assalamu 'alaikum sadayana.. ??
 
 Selamat malam dan salam sejahtera bagi kita semua..
 
@@ -28,7 +28,7 @@ Mungkin banyak yang belum kenal saya karena saya jarang nongol di grup atau meet
 
 jadi saya perkenalan dulu..
 
-Nama saya Muhamad Insan Rizky,  panggilannya Insan.  Masih mahasiswa semester 8 jurusan Pendidikan Teknik Informatika dan Komputer di UNJ (J =&gt; Jakarta != Jones) .. ??
+Nama saya Muhamad Insan Rizky,  panggilannya Insan.  Masih mahasiswa semester 8 jurusan Pendidikan Teknik Informatika dan Komputer di UNJ (J => Jakarta != Jones) .. ??
 
 Saya juga sambil kerja di Pustikom UNJ,  IT Kampus lah.. udah 1 tahun lebih di sana.
 
@@ -56,7 +56,7 @@ Oke sampe sini ada pertanyaan kah?
 
 **J** --> M Insan Rizky: belum om.. masih pengenalan aja.. ??
 
-**R** --> R-Suretno: Oke om, kebetulan lagi coba&quot; juga ?            
+**R** --> R-Suretno: Oke om, kebetulan lagi coba" juga ?            
 
 
 Lanjut……
@@ -67,7 +67,7 @@ Banyak developer yang ngomongin redux,  tapi sebenernya ada teknologi sejenis la
 
 React-native itu sama persis dengan react biasa, cuma nama komponennya aja yang beda.
 
-Jadi kayak kita ngoding bikin web pake react, tapi ini bisa dicompile buat mobile -&gt; apk dan iOS
+Jadi kayak kita ngoding bikin web pake react, tapi ini bisa dicompile buat mobile -> apk dan iOS
 
 Kalau pernah nyoba react, pasti bisa react-native...
 
@@ -97,11 +97,11 @@ Dalam kasus ini, kita akan membuat front-end CRUD dengan React.. terdengar so pr
 
 **Bahan-bahan yang kita butuhkan adalah:**
 
-1. Node Js -&gt; buat npm npm-an wkwk
+1. Node Js -> buat npm npm-an wkwk
 
-2. `create-react-app` -&gt; semacem `angular-cli`.. atau `composer`..
+2. `create-react-app` -> semacem `angular-cli`.. atau `composer`..
 
-3. `json-server` -&gt; buat backend nya.. jadi gak usah bikin manual..
+3. `json-server` -> buat backend nya.. jadi gak usah bikin manual..
 
 kita coba pelan-pelan dulu aja :D
 
@@ -121,7 +121,7 @@ lalu ketik `npm --version`
 
 Kalau hilal sudah terlihat, berarti sudah terinstall
 
-**R** --> Remo Harsono: &gt; `node --version`
+**R** --> Remo Harsono: > `node --version`
 
 _v6.10.0_
 
@@ -263,7 +263,7 @@ npm run build
 
  Removes this tool and copies build dependencies, configuration files
 
-     and scripts into the app directory. If you do this, you can&#39;t go back!
+     and scripts into the app directory. If you do this, you can't go back!
 
 We suggest that you begin by typing:
 
@@ -313,14 +313,14 @@ Ada node\_modules buat dependencies nya.. public buat html nya.. dan src tempat 
 
 ReactDOM.render(
 
-  &lt;App /&gt;,
+  <App />,
 
-  document.getElementById(&#39;root&#39;)
+  document.getElementById('root')
 
 );
 
 ```
-syntax ini berarti bahwa komponen App akan ditaruh di DOM dengan id=&quot;root&quot;
+syntax ini berarti bahwa komponen App akan ditaruh di DOM dengan id="root"
 
 syntax import di atasnya untuk memasukkan hal-hal yang dibutuhkan.. :D
 
@@ -335,13 +335,13 @@ Setiap komponen harus memiliki method render yang berguna untuk membuat isinya s
 **J** --> M Insan Rizky: Dalam render, dom yang dikembalikan harus dalam 1 tag.. tidak boleh banyak tag..
 misal:
 ```html
-&lt;div&gt;
+<div>
 
-   &lt;h3&gt;Hai&lt;/h3&gt;
+   <h3>Hai</h3>
 
-   &lt;h4&gt;Jomblo&lt;/h4&gt;
+   <h4>Jomblo</h4>
 
-&lt;/div&gt;
+</div>
 ```
 
 ini contoh benar
@@ -350,9 +350,9 @@ ini contoh benar
 
 **J** --> M Insan Rizky: tidak boleh seperti ini:
 ```html
-   &lt;h3&gt;Hai&lt;/h3&gt;
+   <h3>Hai</h3>
 
-   &lt;h4&gt;Jomblo&lt;/h4&gt;
+   <h4>Jomblo</h4>
 ```
 
 **BTW , ini bukan HTML lho..**
@@ -369,7 +369,7 @@ Untuk css nya sendiri, bisa di-import di komponen atau di public/index.html lang
 
 **R** --> Suretno: Btw bantu jawab om @M Insan Rizky , mungkin bedanya kalau angular 2 base on typescript kalau react es6. dan kalau di react mainnya component kalau di angular 1 namanya directive ??
 
-**J** --> M Insan Rizky: kalau diimport di komponen, sama seperti `import &#39;./App.css&#39;;`
+**J** --> M Insan Rizky: kalau diimport di komponen, sama seperti `import './App.css';`
 
 **J** --> M Insan Rizky: iya benar.. angular pake typescript.. react pake javascript ES5/ES6
 
@@ -403,7 +403,7 @@ https://codepen.io/insanrizky/project/editor/XJpLJD/
 
 **Silakan buat input text di dalam App-intro**
 ```html
-_&lt;input type=&quot;text&quot; onChange={this.handleTitle}/&gt;_
+_<input type="text" onChange={this.handleTitle}/>_
 ```
 
 Ini artinya, ketika input tersebut berubah, maka ia menjalankan method handleTitle
@@ -465,12 +465,12 @@ https://codepen.io/insanrizky/project/editor/XJpLJD/
 **Intinya kalau mau buat Component, tinggal import React dan Component, bikin class, render, di akhir export, lalu panggil component Sample.js di App.js dengan cara:**
 
 ```javascript
-import Sample from &#39;./Sample&#39;;
+import Sample from './Sample';
 ```
 
 **Kemudian sisipkan komponen Sample di dalam render App seperti ini.**
 ```html
-_&lt;Sample something=&quot;INI SAMPLE&quot;/&gt;_
+_<Sample something="INI SAMPLE"/>_
 ```
 
 Artinya kita memanggil komponent Sample dan menaruh props di dalamnya. Penamaan props itu bebas. Nanti props ini dipanggil dengan cara :
@@ -490,30 +490,21 @@ api.json
 **Isi dengan:**
 ```javascript
 {
-
-  &quot;posts&quot;: [
-
+  "posts": [
     {
-
-      &quot;title&quot;: &quot;Belajar Gak Mesti di Kampus&quot;,
-
-      &quot;author&quot;: &quot;Farid&quot;,
-
-      &quot;content&quot;: &quot;Lorem ipsum dolor sit ame&quot;,
-
-      &quot;id&quot;: 2
-
+      "title": "Belajar Gak Mesti di Kampus",
+      "author": "Farid",
+      "content": "Lorem ipsum dolor sit ame",
+      "id": 2
     }
-
-]
-
+  ]
 }
 ```
 **json-server ini akan membuat restul API dari file json yang kita buat. Nanti kita bisa post, get, put, delete, etc ke server ini.**
 
 **R** --> R-Suretno: di folder root gan?\_ /react-kulwap\_ ?
 
-J -- &gt; M Insan Rizky: yap..
+J -- > M Insan Rizky: yap..
 
  react-kulwap/api.json
 
@@ -552,7 +543,7 @@ _https://codepen.io/insanrizky/project/editor/XJpLJD/_
 
 Pertama, kita buat dulu variabel untuk interaksi ke server..
 ```javascript
-this.api = new Rest(&#39;http://localhost:3004&#39;);
+this.api = new Rest('http://localhost:3004');
 
 componentDidMount()
 ```
