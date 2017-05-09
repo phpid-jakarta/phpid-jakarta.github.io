@@ -1,9 +1,9 @@
 ---
 layout: post
 title: K-Means Clustering Algorithm
-author: Eko Junaidi Salam
+author: Eko Junaidi S
 categories: ["tutorial"]
-tags: [Unsupervised Learning, Clustering, Machine Learning]
+tags: [unsupervised learning, clustering, machine learning]
 ---
 
 **Contoh Input Data :**
