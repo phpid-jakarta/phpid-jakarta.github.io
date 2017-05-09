@@ -32,7 +32,7 @@ cat /etc/bashs
 
 hasilnya seperti itu               
 
-…………………………gambar…………………………………………………
+
 
 Ada `/bin/sh, dash,bash, rbash`                    
 
@@ -78,7 +78,7 @@ kita buat folder belajar dan buat file tes.sh:
 mkdir belajar
 touch tes.sh
 ```
-…………………………gambar…………………………………………………                     
+                     
 
 **T**  #tanya,  ini menggunakan win/linux?                       
 **J** pake weddus monggo pake linux monggo. klo weddus silahkan pake mingw ato git-bash dll                      
@@ -92,19 +92,19 @@ echo Hello World
 echo 'Hello World'
 ```
                    
-…………………………gambar…………………………………………………
+
 
 
 **R**  Adzim: Enggak chmod om.?                       
 **J** nanti dulu, klo sudah monggo di execute : bash tes.sh                      
 
-…………………………gambar…………………………………………………
+
 
 **R**  Adzim: Siappp om                  
 
 Untuk melihat step by step execute monggo gunakan bash -x tes.sh  
 
-…………………………gambar…………………………………………………
+
 
 Apa hasilnya ?                        
 
@@ -113,7 +113,7 @@ Apa hasilnya ?
 **R** + instruksi
 bla.. bla... -> ini adalah outputnya   
 
-…………………………gambar…………………………………………………                
+                
 
 Sekarang kita ganti kontennya sbb:
 
@@ -180,7 +180,7 @@ mari kita ubah konten tes.sh menjadi :
 #!/bin/bash
 ```
 
-…………………………gambar…………………………………………………
+
 
 ```bash
 read -p "Masukkan nama anda ($USER) : " nama
@@ -188,7 +188,7 @@ echo "Nama anda : $nama"
 printf "%s : %s\n" "Nama anda (printf)" $nama
 ```
 
-…………………………gambar…………………………………………………
+
 
 Nanti kita akan masuk dan melihat dimana sih `stdin`, `stdout`, dan `stderr`                      
 
@@ -248,7 +248,7 @@ cat error_log
 
 coba gimana hasilnya ?                     
 **R**   Adzim: las: command not found Om 
-…………………………gambar…………………………………………………
+
 **R**   Adzim: itu 2> stderr om .?                       
 **J**  iya itu aplikasi stderr, coba diperhatikan secara seksama ketika kita eksekusi las "hello", maka error akan langsung keluar kan ?
 
@@ -260,7 +260,7 @@ hasilnya `error las command not foud` memanggil `error_log las` td
 
 Sekarang variable dan local variable.     
 
-…………………………gambar…………………………………………………                
+                
 
 Sekarang kita ganti konten tes.sh menjadi :
 
@@ -323,7 +323,7 @@ Nah, itu adalah command subtitution
 
  Bila ingin menyimpan hasil suatu perintah kedalah variable gunakan `$(command)`                       
 
-…………………………gambar…………………………………………………
+
 
 Lanjut sekarang tambahkan di konten tes.sh:
 
@@ -336,7 +336,7 @@ echo $[1+1]
 apa hasilnya ?                       
 itu adalah penerapan arithmetic evaluation 
 
-…………………………gambar…………………………………………………
+
 **R**  Ashokani: 1+1
 2
 2                        
