@@ -1,13 +1,13 @@
 ---
 layout: page
-title: List Member
+title: Daftar Member
 permalink: daftar-member.html
 ---
 
-<section class="container member">
-	<div class="title">Members</div>	
+<section class="container member">	
 	<div class="row">
-		{% for member in site.data.member %}
+		{% assign member_sorted = (site.data.member | sort: 'name') %}
+		{% for member in member_sorted %}
 			<div class="col-md-2 member__item">
 				<div class="member__avatar">
 					<img src="{{ member.image }}" alt="{{ member.name }}">
