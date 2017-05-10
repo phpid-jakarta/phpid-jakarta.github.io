@@ -3,80 +3,79 @@
     <div class="row">
       <div class="col-md-3 col-sm-3">
         <div class="footer__box">
-          <div class="footer__box__title_line">
-            Keep Following Us
+          <div class="footer__title">
+            Sosial Media
           </div>
-          <div class="footer__box__content">
-            <a href="{{ site.facebook_url }}" class="footer__social is--fb" target="_blank">
-              <i class="ion-social-facebook"></i>
-            </a>
-            <a href="https://www.twitter.com/php_indonesia" class="footer__social is--tw" target="_blank">
-              <i class="ion-social-twitter"></i>
-            </a>
-            <a href="https://github.com/{{ site.github_username }}" class="footer__social is--gh" target="_blank">
-              <i class="ion-social-github"></i>
-            </a>
-            <a href="{{ "/feed.xml" | relative_url }}" class="footer__social is--rss" target="_blank">
-              <i class="ion-social-rss"></i>
-            </a>
+          <div class="footer__content">
+
+            {% for sosial in site.data.sosial_media %}
+              <a href="{{ sosial.href }}" 
+                 class="footer__social {{ sosial.custom_class }}" 
+                 target="_blank">
+                <i class="{{ sosial.icon }}"></i>
+              </a>
+            {% endfor %}
+            
           </div>
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
           <div class="footer__box">
-            <div class="footer__box__title_line">
-              PHP Indonesia Regional
+            <div class="footer__title">
+              Komunitas Partner
             </div>
-            <div class="footer__box__content">
+            <div class="footer__comunity">
+              <div class="row">
+              {% for coumnity in site.data.comunity %}
+                <div class="col-md-4">
+                  <div class="imageCenter">
+                    <a href="{{ coumnity.href }}">
+                      <img src="{{ coumnity.src }}" alt="{{ coumnity.name }}">
+                    </a>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
             </div>
           </div>
       </div>
       <div class="col-md-3 col-sm-3">
           <div class="footer__box">
-            <div class="footer__box__title_line">
-              Highlight !
+            <div class="footer__title">
+              Kategori
             </div>
-            <div class="footer__box__content">
+            <div class="footer__content">
+              <ul class="footer__info">
+                
+                {% for categoryStatic in site.data.category %}   
+                    <li>                                    
+                      <a href="{{ categoryStatic.href }}">
+                        <i class="{{ categoryStatic.icon }}"></i> {{ categoryStatic.category }}
+                      </a>
+                    </li> 
+                {% endfor %}
+
+              </ul>
+              
             </div>
           </div>
       </div>
       <div class="col-md-12">
         <div class="footer__box">
-          <div class="footer__box__title_sponsor text-center">
+          <div class="footer__title--sponsor text-center">
             Sponsorship
           </div>
-          <div class="footer__box__content_sponsor">
+          <div class="footer__sponsor">
             <div class="row">
-              <div class="col-md-2 col-sm-2">
+              {% for sponsor in site.data.sponsorship %}
+              <div class="col-md-3">
                 <div class="imageCenter">
-                  <img src="{{ site.sponsor.microsoft }}" alt="">
+                  <a href="{{ sponsor.href }}">
+                    <img src="{{ sponsor.src }}" alt="{{ sponsor.name }}">
+                  </a>
                 </div>
               </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.ibm }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.tech_in_asia }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.codepolitan }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.max_server }}" alt="">
-                </div>
-              </div>
-              <div class="col-md-2 col-sm-2">
-                <div class="imageCenter">
-                  <img src="{{ site.sponsor.warungssl }}" alt="">
-                </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
