@@ -1,20 +1,26 @@
 // Define defaults for each variable.
 
 $base-font-family: 'Source Sans Pro', sans-serif;
-$base-font-size:   16px !default;
+$base-font-size:   15px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #111 !default;
+$text-color:       #525252 !default;
 $background-color: #fff !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+
+$purplenavy: #3D5A80;
+$carolina: #5FA8D3;
+$powder: #FCFCFC;
+$lightred: #EE6C4D;
+$gunmetal: #293241;
 
 // Width of the content area
 $content-width:    800px !default;
@@ -49,6 +55,7 @@ $on-laptop:        800px !default;
   "minima/normalize",
   "minima/base",
 
+  "minima/site/home",
   "minima/site/header",
   "minima/site/slider",
   "minima/site/nav",
@@ -58,6 +65,7 @@ $on-laptop:        800px !default;
   "minima/site/page",
   "minima/site/post",
   "minima/site/footer",
+  "minima/site/grid",
 
   "minima/syntax-highlighting"
 ;

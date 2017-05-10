@@ -5,23 +5,93 @@
 
 .footer
 {
+    font-size: 12px;
     padding: $spacing-unit 0;
     border-top: 1px solid $grey-color-light;
     background: #fff;
-    &__heading
+
+    &__box
     {
-        font-size: 18px;
-        margin-bottom: $spacing-unit/2;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+        color: $text-color;
     }
-    &__row
+
+    &__title
     {
-        font-size: 15px;
-        color: $grey-color;
-        @include clearfix();
+        padding-bottom: 10px;
+        border-bottom: solid #777;        
+        font-size: 20px;
+
+        &--sponsor
+        {     
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+
     }
+
+    &__content
+    {
+        padding-top: 10px;
+    }
+
+    &__comunity
+    {
+        margin-top: 10px;
+        
+        .imageCenter
+        {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+
+            img
+            {
+                max-height: 60px;
+            }
+
+        }
+
+    }
+    &__sponsor
+    {
+        padding-top: 10px;
+
+        .imageCenter
+        {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+
+            img
+            {
+                max-height: 40px;
+            }
+        }
+    }
+
+    &__info
+    {
+        list-style: none;
+        padding: .5em 0;
+        margin: 0;
+
+        li i, li a{
+            text-transform: capitalize;
+            font-size: 16px;
+            color: $text-color;
+
+            &:hover
+            {
+                font-weight: bold;
+            }
+        }
+    }
+
     &__social
     {
-        font-size: 2em;
+        font-size: 3em;
         padding: 5px 10px 5px 0;
 
         &:hover
@@ -31,51 +101,51 @@
     }
 }
 
+$fb: #3b5998 !default;
+$tw: #55acee !default;
+$gh: #000 !default;
+$rss: #f60 !default;
 
 .is--fb
 {
-    color: #3b5998;
-
+    color: $fb;
     &:hover,
     &:visited,
     a:active
     {
-        color: #3b5998;
+        color: lighten($fb, 20%);
     }
 }
 
 .is--tw
 {
-    color: #55acee;
-
+    color: $tw;
     &:hover,
     &:focus,
     &:active
     {
-        color: #55acee;
+        color: lighten($tw, 20%);
     }
 }
 
 .is--gh
 {
-    color: #000;
-
+    color: $gh;
     &:hover,
     &:focus,
     &:active
     {
-        color: #000;
+        color: lighten($gh, 20%);
     }
 }
 
 .is--rss
 {
-    color: #f60;
-    
+    color: $rss;
     &:hover,
     &:focus,
     &:active
     {
-        color: #f60;
+        color: lighten($rss, 20%);
     }
 }

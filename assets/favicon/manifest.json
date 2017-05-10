@@ -2,7 +2,7 @@
   "theme_color": "#fff",
   "background_color": "#fff",
   "display": "standalone",
-  "start_url": "jakarta.phpindonesia.or.id?utm_source=launcher",
+  "start_url": "https://phpid-jakarta.github.io/?utm_source=launcher",
   "name": "PHP Indonesia Chapter Jakarta",
   "short_name": "PhpId-Jkt",
  "icons": [
