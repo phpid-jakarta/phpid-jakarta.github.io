@@ -13,26 +13,23 @@ tags: [phpid jakarta, kulwap, basic bash]
 <a name='more'></a>
 
 Assalamu'alaikum Wr. Wb.
-Sebelum kita mulai, mari berdo'a menurut agama dan kepercayaan masing2. Berdo'a mulai.... ????               
+Sebelum kita mulai, mari kita berdo'a menurut agama dan kepercayaan masing2. Berdo'a mulai....
+              
 Berdo'a selesai...                        
 Sebelumnya kita akan membahas mengenai Basic Bash Programming...                                         
 Oke kita mulai.                        
 Basic Bash Programming adalah salah satu bahasa bash program dan merupakan bahasa umum yang digunakan dalam distro linux. Di dalam UNIX Systems terdapat beberapa jenis tipe bash itu sendiri,  misal saya menggunakan Distro Ubuntu 16.x  maka ketika saya jalankan perintah :
 
 ```bash
-
 cat /etc/bashs 
 # /etc/bashs: valid login bashs
 /bin/sh
 /bin/dash
 /bin/bash
 /bin/rbash
-
 ```
 
-hasilnya seperti itu               
-
-
+hasilnya seperti itu
 
 Ada `/bin/sh, dash,bash, rbash`                    
 
@@ -62,17 +59,17 @@ Restriction pada `rbash` :
 + Importing Function
 + Specifying file name containing argument ‘/’
 + Specifying file name containing argument ‘-‘
-+ Redirecting output using ‘>‘, ‘>>‘, ‘>|‘, ‘<>‘, ‘>&‘, ‘&>‘
-+ turning off restriction using ‘set +r‘ or ‘set +o‘                        
++ Redirecting output using `>`, `>>`, `>|`, `<>`, `>&`, `&>`
++ turning off restriction using `set +r` or `set +o`                
 
-Nah itu adalah jenis2 bash pada UNIX Systems yang pada bahasan kali ini kita akan persempit materi pada bash bash               
+Nah itu adalah jenis2 bash pada UNIX Systems yang pada bahasan kali ini kita akan persempit materi pada bash.
 Sebelumnya, adakah yang disini pengguna bash ? atau senantiasa menggunakan bash sehari-harinya ?                     
 
 **R**  Adzim: belum pernah Mas                        
 
 Oke lanjut klo gitu.  Bash, saya biasa menggunakan bash untuk melakukan otomasi terhadap sistem Linux yang saya pakai. Mulai dari untuk backup, untuk check security system dll. Nah disini akan kita bahas, bagaimana menggunakan basic bash itu sendiri.
 Saya anggap semua uda didepan komputer masing2.          
-kita buat folder belajar dan buat file tes.sh:
+kita buat folder belajar dan buat file `tes.sh`:
 
 ```bash
 mkdir belajar
@@ -83,7 +80,7 @@ touch tes.sh
 **T**  #tanya,  ini menggunakan win/linux?                       
 **J** pake weddus monggo pake linux monggo. klo weddus silahkan pake mingw ato git-bash dll                      
 
-kalau sudah kita vim tes.sh monggo gunakan editor kesukaan masing-masing, pake nano, vim, geany, npp, dll dan isikan konten berikut :
+kalau sudah kita `vim tes.sh` monggo gunakan editor kesukaan masing-masing, pake `nano, vim, geany, npp`, dll dan isikan konten berikut :
 
 ```bash
 #!/bin/bash
@@ -92,20 +89,11 @@ echo Hello World
 echo 'Hello World'
 ```
                    
-
-
-
 **R**  Adzim: Enggak chmod om.?                       
 **J** nanti dulu, klo sudah monggo di execute : bash tes.sh                      
-
-
-
 **R**  Adzim: Siappp om                  
 
-Untuk melihat step by step execute monggo gunakan bash -x tes.sh  
-
-
-
+Untuk melihat step by step execute monggo gunakan `bash -x tes.sh`  
 Apa hasilnya ?                        
 
 **R** Adzim: Ada plus nya om di depan echo                      
@@ -164,17 +152,17 @@ oke lanjut...
 
 **T** pernah ga menggunakan 3 descriptor diatas ?                      
 **R**   di bash ?                     
-**R**   Adzim: kalo cat file_name.txt termasuk ga om.?                       
+**R**   Adzim: kalo `cat file_name.txt` termasuk ga om.?                       
 **R**   Ashokani: belum tau                       
 **T**  nah itu yg mana stdin, stdout, dan stderr nya ?                        
 **J**  ketika kita melakukan cat fliename.txt maka stdout dia akan berisi hasil dari cat tersebut.                       
          stdin dimana ? stderr dimana ?                       
 stdin akan berisi value bila ia menerima input dari user.
  sedangkan stderr akan berisi value bia command yang dilakukan ternyata menghasilkan error.                      
-**T** Ashokani: stdin itu perintah yang diberikan bukan ?  cat fliename.txt  
+**T** Ashokani: stdin itu perintah yang diberikan bukan ?  `cat fliename.txt`
 **J**  bukan                        
                     
-Balik lagi ke bash. Sekarang kita uban kontent tes.sh                      
+Balik lagi ke bash. Sekarang kita uban kontent `tes.sh`
 mari kita ubah konten tes.sh menjadi :
 ```bash
 #!/bin/bash
@@ -190,10 +178,8 @@ printf "%s : %s\n" "Nama anda (printf)" $nama
 
 
 
-Nanti kita akan masuk dan melihat dimana sih `stdin`, `stdout`, dan `stderr`                      
-
-Apa hasilnya ?    Setelah dieksekusi ?                       
-
+Nanti kita akan masuk dan melihat dimana sih `stdin`, `stdout`, dan `stderr`
+Apa hasilnya ?    Setelah dieksekusi ?
 **R**   Ashokani: bash test.sh
 ```
 Masukkan nama anda (ashoka) : tukimin
@@ -215,9 +201,9 @@ Kesimpulan dari konten echo dan printf:
 
 Trus gimana menggunakan `stdin`, `stdout` dan `stderr` ini dalam bash script ?
 
-Menggunakan `stdin` biasa dimulai dengan 0<
-Menggunakan `stdout` biasa dimulai dg 1>
-Menggunakan `stderr` biasa dimulai dg 2>                      
+Menggunakan `stdin` biasa dimulai dengan `0<`
+Menggunakan `stdout` biasa dimulai dg `1>`
+Menggunakan `stderr` biasa dimulai dg `2>`
 
 Mari kita tes, silahkan eksekusi perintah berikut:
 
@@ -231,7 +217,7 @@ cat 0< tes.txt
 **R**  Ashokani: hasilnya ya Hallo bro                       
 **T** apa kesimpulannya ?                       
 **R** Ashokani: enggak ada error nya                       
-**T** kok bisa cat 0< tes.txt hasilnya Hallo bro ?                      
+**T** kok bisa `cat 0< tes.txt` hasilnya Hallo bro ?                      
 **R**  Adzim: nah ini mas.?                        
 **T** sekarang coba eksekusi las "hallo"                       
 **R**  Ashokani: las nya nggak ada                       
@@ -249,16 +235,15 @@ cat error_log
 coba gimana hasilnya ?                     
 **R**   Adzim: las: command not found Om 
 
-**R**   Adzim: itu 2> stderr om .?                       
+**R**   Adzim: itu `2>` stderr om .?                       
 **J**  iya itu aplikasi stderr, coba diperhatikan secara seksama ketika kita eksekusi las "hello", maka error akan langsung keluar kan ?
 
-ketika eksekusi las "hello" 2>error_log, maka tidak muncul apa2. namun ketika kita cat error_log errornya ternyata ada disitu. ya ga ?      
+ketika eksekusi las "hello" `2>error_log`, maka tidak muncul apa2. namun ketika kita cat error_log errornya ternyata ada disitu. ya ga ?      
              
 hasilnya `error las command not foud` memanggil `error_log las` td                                          
 
- nah kita lanjut...                       
-
-Sekarang variable dan local variable.     
+ nah kita lanjut...
+Sekarang variable dan local variable.
 
                 
 
@@ -278,28 +263,32 @@ echo $HELLO
                  
 apa hasilnya ? trus coba dihapus tulisan local apa hasilnya ?                       
 
-**R** Ashokani: bash test.sh pake local
+**R** Ashokani: `bash test.sh` pake local
+```bash
 Hello
 World
-Hello                        
+Hello
+```                      
 **R** Adzim: tanpa local                        
 **R**  Ashokani: gak pake local
- 	bash test.sh
+```bash
+bash test.sh
 Hello
 World
-World                       
-**R** Adzim: Hello
 World
-World                    
+```
+**R** Adzim: Hello
+```bash
+World
+World
+```
 **T**  Adzim: di bash itu sepasi dianggap delemiter ya om.?                       
 **J**  tergantung  .   
         paham yak beda global variable dan local variable.                      
 
-Kita lanjut coba bikin simple backup pake bash script.                        
-
-Eh sebelum masuk situ, kita belajar dulu command subtitution                       
-
-ubah kontent tes.sh menjadi :
+Kita lanjut coba bikin simple backup pake bash script.
+Eh sebelum masuk situ, kita belajar dulu command subtitution
+ubah kontent `tes.sh` menjadi :
 
 ```bash
 #!/bin/bash
@@ -311,20 +300,21 @@ echo "Lokasi mydir : `pwd`"
                      
 coba cek hasilnya.                       
 
-**R**  Ashokani: hasilnya ngeprint perintah pwd                       
+**R**  Ashokani: hasilnya ngeprint perintah pwd
+```bash
 bash test.sh
 Lokasi mydir : `/mnt/c/Users/Ashokani/belajar`
 Lokasi mydir : `/mnt/c/Users/Ashokani/belajar`
-Lokasi mydir : `/mnt/c/Users/Ashokani/belajar `                      
+Lokasi mydir : `/mnt/c/Users/Ashokani/belajar`
+```
 **R** Adzim: 
-Lokasi mydir : `/Users/jukir/Desktop`                    
+```bash
+Lokasi mydir : `/Users/jukir/Desktop`
+```
 Nah, itu adalah command subtitution                     
 **R** Adzim: sebanyak 3 kali                       
 
- Bila ingin menyimpan hasil suatu perintah kedalah variable gunakan `$(command)`                       
-
-
-
+Bila ingin menyimpan hasil suatu perintah kedalah variable gunakan `$(command)`
 Lanjut sekarang tambahkan di konten tes.sh:
 
 ```bash
@@ -338,13 +328,17 @@ itu adalah penerapan arithmetic evaluation
 
 
 **R**  Ashokani: 1+1
+```bash
 2
-2                        
-**R** Adzim: 1+1 (dianggap string yak mas.?)                        
+2
+```
+**R** Adzim: 1+1 (dianggap string yak mas.?)
+```bash
 2                      
-2                       
+2
+```
 **J**  yup                       
-Apa bedanya ? $((param)) dan $[param] ?                       
+Apa bedanya ? `$((param))` dan `$[param]` ?                       
 itu bedanya cuma cara panggilnya, secara fungsi sama.                       
 **R**  Adzim: waduuh,                      
 Oke. kita coba bikin script backup pake bash script, ubah tes.sh:
