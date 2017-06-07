@@ -8,9 +8,9 @@ permalink: daftar-member.html
 	<div class="row">
 		{% assign member_sorted = (site.data.member | sort: 'name') %}
 		{% for member in member_sorted %}
-			<div class="col-md-3 centered member__item">
+			<div class="col-md-2 member__item" style="text-align:center;word-break:break-all;">
 				<div class="member__avatar">
-					<img src="{{ member.image }}" alt="{{ member.name }}">
+					<img class="member__img" src="{{ member.image }}" alt="{{ member.name }}">
 				</div>
 				<div class="member__name">{{ member.name }}</div>
 				<div class="member__jobs">{{ member.jobs }}</div>				
@@ -52,4 +52,4 @@ permalink: daftar-member.html
 		{% endfor %}
 	</div>
 </section>
-
+<script src="{{ "/assets/js/member.js" | relative_url }}" type="text/javascript" defer></script>
