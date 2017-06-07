@@ -16,36 +16,46 @@ permalink: daftar-member.html
 				<div class="member__jobs">{{ member.jobs }}</div>				
 				<div class="member__social">
 					<ul>
+					{% if member.fb_url %}
 						<li class="member__social-list">							
 							<a href="{{ member.fb_url }}"  
 	                 target="_blank">
 	                <i class="ion-social-facebook-outline"></i>
 	            </a>
 						</li>
+				  {% endif %}
+					{% if member.tw_url %}
 						<li class="member__social-list">							
 							<a href="{{ member.tw_url }}"  
 	                 target="_blank">
 	                <i class="ion-social-twitter-outline"></i>
 	            </a>
 						</li>
+				  {% endif %}
+					{% if member.ins_url %}
 						<li class="member__social-list">		
 							<a href="{{ member.ins_url }}"  
 	                 target="_blank">
 	                <i class="ion-social-instagram-outline"></i>
 	            </a>
 						</li>
+				  {% endif %}
+					{% if member.in_url %}
 						<li class="member__social-list">		
 							<a href="{{ member.in_url }}"  
 	                 target="_blank">
 	                <i class="ion-social-linkedin-outline"></i>
 	            </a>
 						</li>
+				  {% endif %}
+					{% if member.gh_url %}
 						<li class="member__social-list">			
-						<a href="{{ member.gh_url }}"  
-                 target="_blank">
-                <i class="ion-social-github-outline"></i>
-            </a>
+							<a href="{{ member.gh_url }}"  
+	                 target="_blank">
+	                <i class="ion-social-github-outline"></i>
+	            </a>
 						</li>
+				  {% endif %}
 					</ul>
 				</div>
 			</div>
