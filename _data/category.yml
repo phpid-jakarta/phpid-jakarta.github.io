@@ -14,6 +14,10 @@
   href: "/category/tutorial.html"
   icon: "ion-navigate"
 
+- category: "sharing"
+  href: "/category/sharing.html"
+  icon: "ion-wand"
+
 - category: "uncategories"
   href: "/category/uncategories.html"
   icon: "ion-pie-graph"
