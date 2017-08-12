@@ -12,13 +12,12 @@
         </div>   
     </div>
 
-
     <nav class="nav__desktop">
       <ul class="nav__menu menu">
         {% for nav in site.data.menu %}
           {% if nav.sub != null %}
             <li class="menu__item">
-              <a class="menu__link" href="/{{ nav.href }}">{{ nav.title }}</a>
+              <a class="menu__link" href="/{{ nav.href }}">{{ nav.title }} <i class="ion-chevron-down"></i></a>
               <ul class="menu--child">
                 <div class="menu__wrapper">
                   {% for sub in nav.sub %}

@@ -104,14 +104,14 @@
 
     &__wrapper
     {
-        border: 1px solid $grey-color-light;
-        background-color: #fff;
+        // border: 1px solid $grey-color-light;
+        background-color: $carolina;
     }
 
     &--child
     {
         position: absolute;
-        top: 70px;
+        top: 80px;
         overflow: hidden;
         width: 160px;
         margin-left: -10px;
@@ -141,12 +141,20 @@
         display: block;
         padding: 1.3em;
         text-decoration: none;
-        border-top: 2px solid #fff;
+        color: transparentize(#fff, 0.2);
+        cursor: pointer;
+        // border-top: 2px solid #fff;
+
+        i {
+            font-size: 12px;
+            margin-left: 5px;
+        }
 
         &:hover
         {
             text-decoration: none;
-            border-top: 2px solid $brand-color;
+            color: transparentize(#fff, 0.1);
+            // border-top: 2px solid $brand-color;
         }
 
         &--child
@@ -155,11 +163,14 @@
             display: block;
             padding: .5em 1.3em;
             text-decoration: none;
+            cursor: pointer;
+            color: #fff;
 
             &:hover
             {
+                color: #fff;
                 text-decoration: none;
-                background-color: $grey-color-light;;
+                background-color: darken($carolina, 3%);
             }
         }
     }

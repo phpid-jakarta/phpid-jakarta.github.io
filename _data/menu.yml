@@ -2,23 +2,25 @@
   href: "#profil"
   sub:
   - title: "Tentang Kami"
-    href: "tentang_kami.html"
+    href: "tentang-kami.html"
   - title: "Visi - Misi"
-    href: "visi_misi.html"
+    href: "visi-misi.html"
+  - title: "List Member"
+    href: "daftar-member.html"
 
 - title: "Program Kerja"
-  href: "program_kerja.html"
+  href: "program-kerja.html"
 
 - title: "Galeri"
   href: "#gallery"
   sub:
   - title: "Foto"
-    href: "galeri_foto.html"
+    href: "galeri-foto.html"
   - title: "Video"
-    href: "galeri_video.html"
+    href: "galeri-video.html"
     
 - title: "Arsip"
   href: "arsip.html"
 
 - title: "Daftar Isi"
-  href: "daftar_isi.html"
+  href: "daftar-isi.html"

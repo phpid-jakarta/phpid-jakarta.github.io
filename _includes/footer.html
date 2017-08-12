@@ -1,33 +1,93 @@
 <footer class="site__footer footer" role="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <div class="footer__box">
+          <div class="footer__title">
+            Sosial Media
+          </div>
+          <div class="footer__content">
 
-  <div class="wrapper">
+            {% for sosial in site.data.sosial_media %}
+              <a href="{{ sosial.href }}" 
+                 class="footer__social {{ sosial.custom_class }}" 
+                 target="_blank">
+                <i class="{{ sosial.icon }}"></i>
+              </a>
+            {% endfor %}
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+          <div class="footer__box">
+            <div class="footer__title">
+              Komunitas Partner
+            </div>
+            <div class="footer__comunity">
+              <div class="row">
+              {% for coumnity in site.data.comunity %}
+                <div class="col-md-4">
+                  <div class="imageCenter">
+                    <a href="{{ coumnity.href }}">
+                      <img src="{{ coumnity.src }}" alt="{{ coumnity.name }}">
+                    </a>
+                  </div>
+                </div>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+          <div class="footer__box">
+            <div class="footer__title">
+              Kategori
+            </div>
+            <div class="footer__content">
+              <ul class="footer__info">
+                
+                {% for categoryStatic in site.data.category %}   
+                    <li>                                    
+                      <a href="{{ categoryStatic.href }}">
+                        <i class="{{ categoryStatic.icon }}"></i> {{ categoryStatic.category }}
+                      </a>
+                    </li> 
+                {% endfor %}
 
-    <h2 class="footer__heading">{{ site.title | escape }}</h2>
-
-    <div class="footer__row">
-      <a href="{{ site.facebook_url }}" class="footer__social is--fb">
-        <i class="ion-social-facebook"></i>
-      </a>
-      <a href="https://www.twitter.com/php_indonesia" class="footer__social is--tw">
-        <i class="ion-social-twitter"></i>
-      </a>
-      <a href="https://github.com/{{ site.github_username }}" class="footer__social is--gh">
-        <i class="ion-social-github"></i>
-      </a>
-      <a href="{{ "/feed.xml" | relative_url }}" class="footer__social is--rss">
-        <i class="ion-social-rss"></i>
-      </a>
+              </ul>
+              
+            </div>
+          </div>
+      </div>
+      <div class="col-md-12">
+        <div class="footer__box">
+          <div class="footer__title--sponsor text-center">
+            Sponsorship
+          </div>
+          <div class="footer__sponsor">
+            <div class="row">
+              {% for sponsor in site.data.sponsorship %}
+              <div class="col-md-3">
+                <div class="imageCenter">
+                  <a href="{{ sponsor.href }}">
+                    <img src="{{ sponsor.src }}" alt="{{ sponsor.name }}">
+                  </a>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        Copyright &copy; {{ site.copyright_year }}
+        {% if site.author %}
+          {{ site.author | escape }}
+        {% else %}
+          {{ site.title | escape }}
+        {% endif %}
+      </div>
     </div>
-
-    <div class="footer__row">
-      Copyright &copy; {{ site.copyright_year }} 
-      {% if site.author %}
-        {{ site.author | escape }}
-      {% else %}
-        {{ site.title | escape }}
-      {% endif %}
-    </div>
-
   </div>
-
 </footer>

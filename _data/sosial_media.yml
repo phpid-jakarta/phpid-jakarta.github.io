@@ -1,0 +1,19 @@
+- icon: "ion-social-facebook"
+  media: "Facebook"
+  href: "https://facebook.com/profile.php?id=100011420743645"
+  custom_class: "is--fb"
+
+- icon: "ion-social-twitter"
+  media: "Twitter"
+  href: "https://www.twitter.com/php_indonesia"
+  custom_class: "is--tw"
+
+- icon: "ion-social-github"
+  media: "Github"
+  href: "https://github.com/phpid-jakarta"
+  custom_class: "is--gh"
+
+- icon: "ion-social-rss"
+  media: "RSS Feed"
+  href: "/feed.xml"
+  custom_class: "is--rss"

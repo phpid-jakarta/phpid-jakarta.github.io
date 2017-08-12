@@ -1,0 +1,57 @@
+.pager
+{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__page
+    {
+        position: relative;
+        float: left;
+        margin-left: -5px;
+        padding: 8px 15px;
+        text-decoration: none;
+        color: #0096D9;
+        border: 1px solid #CCC;
+        background-color: #fff;
+        &--active
+        {
+            text-decoration: none;
+            color: #000;
+            background-color: #CCC;
+        }
+        &:focus
+        {
+            text-decoration: none;
+        }
+        &:hover
+        {
+            text-decoration: none;
+            color: #000;
+            background-color: #CCC;
+        }
+    }
+    li
+    {
+        display: inline-block;
+    }
+    &--radius
+    {
+        li
+        {
+            &:first-child > a,
+            &:first-child > span
+            {
+                border-top-left-radius: .25em;
+                border-bottom-left-radius: .25em;
+            }
+            &:last-child > a,
+            &:last-child > span
+            {
+                border-top-right-radius: .25em;
+                border-bottom-right-radius: .25em;
+            }
+        }
+    }
+}
