@@ -185,7 +185,7 @@ Mohon maaf ada banyak kekurangan dalam penyampaian materinya
 
 ## diskusi 
 
-![3.1A recommended tidak?](/assets/images/kulwap/raspi-hasil-copy-OS-1.jpeg "3.1A recommended tidak?")
+![3.1A recommended tidak?](/assets/images/kulwap/raspi-3-1-ampere.jpeg "3.1A recommended tidak?")
 
 [hengky] *3.1A recommended tidak?*
 
