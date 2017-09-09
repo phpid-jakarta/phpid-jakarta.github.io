@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  PHP Basic
+title:  Yii Framework
 date:   2016-05-21 09:49:07 +0700
 author: Nico Susanto 
 categories: ["kulwap"]
