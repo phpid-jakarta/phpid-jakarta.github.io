@@ -201,3 +201,16 @@ Btw ada sedikit tips nyari contoh-contoh membuat percobaan dengan raspi dan baha
 
 [riyo] *Apa Raspberry Pi ini bisa menjadi Seperti Arduino? Maksudnya bisa langsung konek ke io/sensor ?*
 
+*Bisa ka, raspi juga bisa dijadikan perangkat IoT* 
+
+Contohnya tadi kan ada komponen camera serial interface port. Kita bisa beli modul camera dan di masukan ke perangkat raspinya
+
+[abubakar] *Installasi ini via kabel data kah? Apa sperti flash smartphone??* 
+
+*Melalu card reader ka,  jadi osnya itu dimasukan ke sd card denganaplikasi etcher*
+
+[ejs] *Biasanya pin analog digunakan untuk apa ya ? Pin digital untuk apa ? Apa beda dr keduanya ?*
+
+*Di arduino sendiri pin analog itu digunakan untuk input output digital,  jadi signal analog yang masuk nantinya akan diterjemahkan ke nilai digital yang mudah diukur,  kalo pin digital. Di arduino itu  hanya bisa menangkap signal berupa 1 dan 0* 
+
+*Kalo di raspi itu pin digitalnya itu disebut juga GPIO singkatan dari general input output, Untuk raspi 3 model b+ punya 40 pin dengan fungsi masing - masing yang sampai sekarang pun saya belum hafal banget wjwkkw* 
