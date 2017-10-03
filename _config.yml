@@ -25,7 +25,7 @@ logo_square_url: /assets/images/logo/phpid-jakarta-300x300.png
 #enforce_ssl: jakarta.phpindonesia.or.id
 
 excerpt_separator: <a name='more'></a>
-paginate: 5
+paginate: 8
 disqus:
    shortname: phpid-jakarta
 google_analytics: UA-97096911-1
