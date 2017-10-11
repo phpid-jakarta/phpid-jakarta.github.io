@@ -77,11 +77,13 @@ layout: home
 
 	<div class="row">
 		{% for member in site.data.member_organizer %}
-			<div class="col-md-2 member__item">
-				<div class="member__avatar">
-					<img src="{{ member.image }}" alt="{{ member.name }}">
+			<div class="member__item">
+				<div class="member__name"><b>{{ member.name }}</b></div>
+				<div class="member__avatar__wrapper">
+					<div class="member__avatar">
+						<img src="{{ member.image }}" alt="{{ member.name }}">
+					</div>
 				</div>
-				<div class="member__name">{{ member.name }}</div>
 				<div class="member__jobs">{{ member.jobs }}</div>
 			</div>
 		{% endfor %}
