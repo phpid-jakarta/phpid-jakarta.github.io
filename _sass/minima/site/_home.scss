@@ -89,7 +89,7 @@
 // Member
 .member
 {
-    padding: 4em 0;
+    padding: 4em 0 0 0;
     text-align: center;
     &__item
     {        
@@ -144,6 +144,19 @@
     &__jobs
     {
         color: $grey-color;
+    }
+    &__see-all{
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        display: block;
+        padding: 8px;
+        max-width: 200px;
+        margin: 20px auto;
+        background-color: $carolina;
+        a{
+            color: #fff;
+        }
     }
     &__social{
         ul{
