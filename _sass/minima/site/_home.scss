@@ -36,6 +36,18 @@
     color: #fff;
     background-color: $carolina;
     @include box-shadow( inset 0px 8px 16px -6px darken($carolina, 15%), inset 0px -8px 16px -6px darken($carolina, 15%));
+    
+    &__wrapper{
+        width: 20%;
+        display: inline-block;
+        margin: 0 5px;
+
+        @include media-query($on-palm)
+        {
+            width: 80%;
+        }
+    }
+
     .program__item
     {
         font-size: 16px;
@@ -45,12 +57,22 @@
         cursor: pointer;
         border: 1px solid #fff;
         @include flex();
-        @include transition(all .2s ease-in-out);
-        justify-content: center;
+        justify-content: center;        
+
+        @include media-query-min($on-laptop)
+        {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
         &:hover
         {
             color: $carolina;
             background-color: #fff;
+            @include media-query-min($on-laptop)
+            {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
         }
     }
     .program__inner
