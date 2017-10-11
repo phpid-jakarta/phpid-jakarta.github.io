@@ -41,6 +41,12 @@ $on-laptop:        800px !default;
   }
 }
 
+@mixin media-query-min($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
 // Import partials.
 @import
   "minima/mixins/appearance",

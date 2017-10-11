@@ -65,7 +65,7 @@
     font-size: 42px;
     line-height: 1;
     letter-spacing: -1px;
-    @include media-query($on-laptop)
+    @include media-query-min($on-laptop)
     {
         font-size: 36px;
     }
@@ -78,7 +78,7 @@
     {
         font-size: 32px;
 
-        @include media-query($on-laptop)
+        @include media-query-min($on-laptop)
         {
             font-size: 28px;
         }
@@ -87,7 +87,7 @@
     {
         font-size: 26px;
 
-        @include media-query($on-laptop)
+        @include media-query-min($on-laptop)
         {
             font-size: 22px;
         }
@@ -96,7 +96,7 @@
     {
         font-size: 20px;
 
-        @include media-query($on-laptop)
+        @include media-query-min($on-laptop)
         {
             font-size: 18px;
         }
