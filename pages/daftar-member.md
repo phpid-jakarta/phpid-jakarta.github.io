@@ -8,11 +8,11 @@ permalink: daftar-member.html
 	<div class="row">
 		{% assign member_sorted = (site.data.member | sort: 'name') %}
 		{% for member in member_sorted %}
-			<div class="col-md-2 member__item" style="text-align:center;word-break:break-all;">
+			<div class="member__item">
+				<div class="member__name"><b>{{ member.name }}</b></div>
 				<div class="member__avatar">
 					<img class="member__img" src="{{ member.image }}" alt="{{ member.name }}">
 				</div>
-				<div class="member__name">{{ member.name }}</div>
 				<div class="member__jobs">{{ member.jobs }}</div>				
 				<div class="member__social">
 					<ul>

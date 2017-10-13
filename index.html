@@ -58,7 +58,7 @@ layout: home
 
 		<div class="row">
 			{% for pk in site.data.program_kerja %}
-				<div class="col-md-3 col-sm-6">
+				<div class="program__wrapper">
 					<div class="program__item">
 						<div class="program__inner">
 							<div class="program__icon"><i class="{{ pk.icon }}"></i></div>
@@ -73,18 +73,23 @@ layout: home
 
 <!-- Member -->
 <section class="container member">
-	<div class="title">Members</div>	
+	<div class="title">Anggota</div>	
 
 	<div class="row">
 		{% for member in site.data.member_organizer %}
-			<div class="col-md-2 member__item">
-				<div class="member__avatar">
-					<img src="{{ member.image }}" alt="{{ member.name }}">
+			<div class="member__item">
+				<div class="member__name"><b>{{ member.name }}</b></div>
+				<div class="member__avatar__wrapper">
+					<div class="member__avatar">
+						<img src="{{ member.image }}" alt="{{ member.name }}">
+					</div>
 				</div>
-				<div class="member__name">{{ member.name }}</div>
 				<div class="member__jobs">{{ member.jobs }}</div>
 			</div>
 		{% endfor %}
+	</div>
+	<div class="member__see-all">
+		<a href="/daftar-member.html">Lihat Selengkapnya</a>
 	</div>
 </section>
 
@@ -94,25 +99,27 @@ layout: home
 	<div class="row">
 		{% assign sorted = (paginator.posts | sort: 'date' | reverse) %}
 	  	{% for post in sorted %}
-			<div class="col-md-3 col-sm-6">
+			<div class="article__wrapper">
 				<div class="article">
-					<div class="article__title">
-						<a class="post__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-					</div>
-					<div class="article__meta">
-						<div class="meta__item">
-							<i class="ion-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
+					<div class="article__content">
+						<div class="article__title">
+							<a class="post__link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 						</div>
-
-						{% if post.author %}
+						<div class="article__meta">
 							<div class="meta__item">
-								<i class="ion-person"></i> {{ post.author }}
+								<i class="ion-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}
 							</div>
-						{% endif %}
 
-					</div>
-					<div class="article__description">
-						{{ post.excerpt }}
+							{% if post.author %}
+								<div class="meta__item">
+									<i class="ion-person"></i> {{ post.author }}
+								</div>
+							{% endif %}
+
+						</div>
+						<div class="article__description">
+							{{ post.excerpt }}
+						</div>
 					</div>
 					<div class="article__button">
 						<a href="{{site.baseurl}}{{ post.url }}">Read More</a>
