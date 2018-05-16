@@ -10,10 +10,10 @@
 - name: "Eko Junaidi Salam"
   jobs: "Pusat Data Statistik Kriminal dan Teknologi Informasi Kejaksaan Agung RI - Staf Basis Data"
   image: "/assets/images/member/organizer/eko-js.jpg"
-  fb_url: "https://facebook.com/ekojs"
-  tw_url: "https://twitter.com/ekojs"
+  fb_url: "https://facebook.com/ekojunaidisalam"
+  tw_url: "https://twitter.com/Eko_Junaidi_S"
   gh_url: "https://github.com/ekojs"
-  ins_url: "https://instagram.com/"
+  ins_url: "https://instagram.com/ekojs"
 
 - name: "Ashokani"
   jobs: "Software Engineer"
@@ -274,3 +274,11 @@
   ins_url: https://instagram.com/hansendusenov
   gh_url: https://github.com/hansendusenov
   in_url: https://id.linkedin.com/in/hansendusenov
+  
+- name: Gita Citra Puspita
+  jobs: Trainer at PT Kollaborasi Ide Kreatif
+  image: https://avatars3.githubusercontent.com/u/23377119?s=460&v=4
+  fb_url: https://www.facebook.com/gita.c.puspita
+  ins_url: https://www.instagram.com/gita.c.puspita
+  gh_url: https://github.com/gitacitrap
+  in_url: https://www.linkedin.com/in/gita-citra-puspita-39879368
