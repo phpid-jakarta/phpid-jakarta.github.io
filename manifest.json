@@ -1,0 +1,21 @@
+{
+	"theme_color": "#000000",
+	"background_color": "#000000",
+	"display": "standalone",
+	"name": "PHPID Chapter Jakarta",
+  "description": "Komunitas PHP Indonesia Regional Jakarta",
+	"start_url": "/?utm_source=launcher",
+	"short_name": "PhpID-JKT",
+	"icons": [
+		{
+			"sizes": "192x192",
+			"src": "/assets/favicon/android-icon-192x192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "300x300",
+			"src": "/assets/images/logo/phpid-jakarta-300x300.png",
+			"type": "image/png"
+		}
+	]
+}
