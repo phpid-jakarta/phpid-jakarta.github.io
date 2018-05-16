@@ -4,7 +4,7 @@
   
   if (workerScript && 'serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register(`${workerScript}?${Math.random()}`)
+      navigator.serviceWorker.register(`${workerScript}`)
     })
   }
 })()
