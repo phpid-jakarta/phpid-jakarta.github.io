@@ -53,7 +53,8 @@ const thirdPartyRoutes = [
       '^https://fonts.(?:googleapis|gstatic).com/(.*)',
       '^https://storage.(?:googleapis|gstatic).com/(.*)',
       '^https://cdnjs.cloudflare.com/(.*)',
-      '^https://code.ionicframework.com/(.*)'
+      '^https://code.ionicframework.com/(.*)',
+      '^https://c.disquscdn.com/(.*)'
     ],
     cache: generateCacheableConfig('__thirdparty', 20, 7)
   }
