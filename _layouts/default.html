@@ -2,7 +2,14 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
-
+  
+  <link rel="preload" as="script" 
+        href="https://code.jquery.com/jquery-3.2.1.min.js">
+  <link rel="preload" as="script" 
+        href="{{ "/assets/js/offcanvas.js" | relative_url }}">
+  <link rel="preload" as="script" 
+        href="{{ "/assets/js/header.js" | relative_url }}">
+  
   <body>
 
     {% include header.html %}
