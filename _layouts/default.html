@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+  <link rel="dns-prefetch" href="https://code.ionicframework.com">
   
   <link rel="preload" as="script" 
         href="https://code.jquery.com/jquery-3.2.1.min.js">
@@ -9,6 +11,8 @@
         href="{{ "/assets/js/offcanvas.js" | relative_url }}">
   <link rel="preload" as="script" 
         href="{{ "/assets/js/header.js" | relative_url }}">
+  
+  {% include head.html %}
   
   <body>
 
