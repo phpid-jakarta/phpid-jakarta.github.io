@@ -5,7 +5,7 @@ permalink: category-community.html
 ---
 
 <ul>
-	{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+	{% assign sorted = site.posts | sort: 'date' | reverse %}
 	{% for post in sorted %}
 		{% for pt in post.categories %}
 			{% if pt == "community" %}

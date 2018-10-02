@@ -6,7 +6,7 @@ permalink: daftar-member.html
 
 <section class="container member">	
 	<div class="row">
-		{% assign member_sorted = (site.data.member | sort: 'name') %}
+		{% assign member_sorted = site.data.member | sort: 'name' %}
 		{% for member in member_sorted %}
 			<div class="member__item">
 				<div class="member__name"><b>{{ member.name }}</b></div>
