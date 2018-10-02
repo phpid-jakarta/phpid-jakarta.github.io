@@ -6,7 +6,7 @@ permalink: daftar-isi.html
 <div class="home">
 
   <ul>
-	{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+	{% assign sorted = site.posts | sort: 'date' | reverse %}
     {% for post in sorted %}
       <li>
         {{ post.date | date: "%b %-d, %Y" }} - <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

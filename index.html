@@ -97,7 +97,7 @@ layout: home
 <section class="container blogs">
 	<div class="title">Artikel Terbaru</div>
 	<div class="row">
-		{% assign sorted = (paginator.posts | sort: 'date' | reverse) %}
+		{% assign sorted = paginator.posts | sort: 'date' | reverse %}
 	  	{% for post in sorted %}
 			<div class="article__wrapper">
 				<div class="article">

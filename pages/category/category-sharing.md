@@ -5,7 +5,7 @@ permalink: category/tips-dan-trik.html
 ---
 
 <ul>
-	{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+	{% assign sorted = site.posts | sort: 'date' | reverse %}
 	{% for post in sorted %}
 		{% for pt in post.categories %}
 			{% if pt == "tips dan trik" %}

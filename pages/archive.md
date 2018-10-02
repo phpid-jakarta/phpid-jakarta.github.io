@@ -11,7 +11,7 @@ permalink: arsip.html
 
 #### {{ nt }} {#cat-{{nt}}}
 <ul>
-	{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+	{% assign sorted = site.posts | sort: 'date' | reverse %}
 	{% for post in sorted %}
 		{% for pt in post.categories %}
 			{% if nt == pt %}
@@ -32,7 +32,7 @@ permalink: arsip.html
 
 #### {{ nt }} {#tag-{{nt | downcase | replace: ' ', '_'}}}
 <ul> 
-{% assign sorted = (site.posts | sort: 'date' | reverse) %}
+{% assign sorted = site.posts | sort: 'date' | reverse %}
 {% for post in sorted %}
 	{% for pt in post.tags %}
 		{% if nt == pt %}
