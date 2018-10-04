@@ -15,16 +15,16 @@
   gh_url: "https://github.com/ekojs"
   ins_url: "https://instagram.com/ekojs"
 
-- name: "Ashokani"
-  jobs: "Software Engineer"
-  image: "/assets/images/member/organizer/ashokani.png"
-  fb_url: "https://facebook.com/"
-  tw_url: "https://twitter.com/"
-  gh_url: "https://github.com/"
-  ins_url: "https://instagram.com/"
+- name: "Danang Eko Alfianto"
+  jobs: "Software Engineer at Vizitrip"
+  image: "https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/21558746_1844464278902900_4831404673669331168_n.jpg?_nc_cat=103&_nc_eui2=AeFzWnOgxKOMognPI88uYdVOE5p7AWIoblc4rW9Oo2YmbEw4-HH_DzgQ-jqgmzE-vSALdG_CgiiBiHqMfteWnLXwlSBaLHhgmyI_tzrli1U_Vg&oh=5d6ec1d7cb2f69bef166c07061d8aa0f&oe=5C180C10"
+  fb_url: "https://www.facebook.com/Danang.Eko.Alfianto"
+  tw_url: "https://twitter.com/danang_ekal"
+  gh_url: "https://github.com/danangekal"
+  ins_url: "https://instagram.com/danang_ekal"
 
-- name: "Deroh"
-  jobs: "Customer Care at PT. Aplikanusa Lintasarta"
+- name: "Dewi Rohmani (Deroh)"
+  jobs: "IT Support Application at PT. Infinitium"
   image: "/assets/images/member/organizer/deroh.jpg"
   fb_url: "https://facebook.com/dewi.rohmani"
   tw_url: "https://twitter.com/"
@@ -160,9 +160,9 @@
   gh_url: https://github.com/RachmanForniandi
   in_url: https://www.linkedin.com/in/rachman-forniandi-83b1a4b4/
 
-- name: Ahmad Fakhrurozi Syah
-  jobs: Web Developer at veboo.co.id
-  image: https://media.licdn.com/media/AAEAAQAAAAAAAAhXAAAAJGE3M2FlZWYxLTJhYzAtNGFlNC04MWY3LWRjNDU1MGI4OGMzYQ.jpg
+- name: A Fakhrurozi S
+  jobs: Software Developer at komuto.com
+  image: https://media.licdn.com/dms/image/C5103AQFWPfuNv8Mzjg/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=egdzhJnIGPddlyrvzfPHn87HCoYfs4x_as5U_SPEHgk
   fb_url: https://www.facebook.com/haifahrul
   ins_url: https://www.instagram.com/haifahrul/
   gh_url: https://github.com/haifahrul
@@ -282,3 +282,11 @@
   ins_url: https://www.instagram.com/gita.c.puspita
   gh_url: https://github.com/gitacitrap
   in_url: https://www.linkedin.com/in/gita-citra-puspita-39879368
+  
+- name: Gun Gun Priatna
+  jobs: Web Developer at LPM Univeristas Muhammadiyah Sukabumi
+  image: https://avatars0.githubusercontent.com/u/13196484?s=460&v=4
+  fb_url: https://www.facebook.com/gungunpriatna002
+  ins_url: https://www.instagram.com/gungunpriatna
+  gh_url: https://github.com/doublegunz
+  in_url: https://www.linkedin.com/in/gungunpriatna
