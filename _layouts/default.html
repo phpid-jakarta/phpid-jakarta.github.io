@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+  <link rel="dns-prefetch" href="https://code.ionicframework.com">
+  
+  <link rel="preload" as="script" 
+        href="https://code.jquery.com/jquery-3.2.1.min.js">
+  <link rel="preload" as="script" 
+        href="{{ "/assets/js/offcanvas.js" | relative_url }}">
+  <link rel="preload" as="script" 
+        href="{{ "/assets/js/header.js" | relative_url }}">
+  
   {% include head.html %}
-
+  
   <body>
 
     {% include header.html %}
@@ -21,6 +32,11 @@
             type="text/javascript" defer></script>
     <script src="{{ "/assets/js/header.js" | relative_url }}" 
             type="text/javascript" defer></script>
+    
+    <!-- REGISTER SW HERE -start -->
+    <script src="/companion.js" data-service-worker="/service-worker.js"></script>
+    <!-- REGISTER SW HERE -end -->
+    
   </body>
 
 </html>

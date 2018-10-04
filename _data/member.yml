@@ -1,11 +1,43 @@
 - name: "Irfan Maulana"
-  jobs: "Software Development Engineer at Blibli.com"
+  jobs: "Software Development Engineer at Bizzy Indonesia"
   image: "/assets/images/member/member/irfan-maulana.jpg"
   fb_url: "https://facebook.com/mazipanneh"
   tw_url: "https://twitter.com/Maz_Ipan"
   gh_url: "https://github.com/mazipan"
   ins_url: "https://instagram.com/maz_ipan"
   in_url: https://id.linkedin.com/in/irfanmaulanamazipan
+
+- name: "Eko Junaidi Salam"
+  jobs: "Pusat Data Statistik Kriminal dan Teknologi Informasi Kejaksaan Agung RI - Staf Basis Data"
+  image: "/assets/images/member/organizer/eko-js.jpg"
+  fb_url: "https://facebook.com/ekojunaidisalam"
+  tw_url: "https://twitter.com/Eko_Junaidi_S"
+  gh_url: "https://github.com/ekojs"
+  ins_url: "https://instagram.com/ekojs"
+
+- name: "Danang Eko Alfianto"
+  jobs: "Software Engineer at Vizitrip"
+  image: "https://scontent.fcgk10-1.fna.fbcdn.net/v/t1.0-9/21558746_1844464278902900_4831404673669331168_n.jpg?_nc_cat=103&_nc_eui2=AeFzWnOgxKOMognPI88uYdVOE5p7AWIoblc4rW9Oo2YmbEw4-HH_DzgQ-jqgmzE-vSALdG_CgiiBiHqMfteWnLXwlSBaLHhgmyI_tzrli1U_Vg&oh=5d6ec1d7cb2f69bef166c07061d8aa0f&oe=5C180C10"
+  fb_url: "https://www.facebook.com/Danang.Eko.Alfianto"
+  tw_url: "https://twitter.com/danang_ekal"
+  gh_url: "https://github.com/danangekal"
+  ins_url: "https://instagram.com/danang_ekal"
+
+- name: "Dewi Rohmani (Deroh)"
+  jobs: "IT Support Application at PT. Infinitium"
+  image: "/assets/images/member/organizer/deroh.jpg"
+  fb_url: "https://facebook.com/dewi.rohmani"
+  tw_url: "https://twitter.com/"
+  gh_url: "https://github.com/"
+  ins_url: "https://instagram.com/drohmani"
+  
+- name: "Anne Regina"
+  jobs: "Head of FemaleGeek Php Indonesia"
+  image: "/assets/images/member/organizer/anne.png"
+  fb_url: "https://facebook.com/annereginancy"
+  tw_url: "https://twitter.com/"
+  gh_url: "https://github.com/annegii"
+  ins_url: "https://instagram.com/anneregie"
 
 - name: "Muhammad Yulianto"
   jobs: "Programmer at Berrykitchen"
@@ -242,3 +274,19 @@
   ins_url: https://instagram.com/hansendusenov
   gh_url: https://github.com/hansendusenov
   in_url: https://id.linkedin.com/in/hansendusenov
+  
+- name: Gita Citra Puspita
+  jobs: Trainer at PT Kollaborasi Ide Kreatif
+  image: https://avatars3.githubusercontent.com/u/23377119?s=460&v=4
+  fb_url: https://www.facebook.com/gita.c.puspita
+  ins_url: https://www.instagram.com/gita.c.puspita
+  gh_url: https://github.com/gitacitrap
+  in_url: https://www.linkedin.com/in/gita-citra-puspita-39879368
+  
+- name: Gun Gun Priatna
+  jobs: Web Developer at LPM Univeristas Muhammadiyah Sukabumi
+  image: https://avatars0.githubusercontent.com/u/13196484?s=460&v=4
+  fb_url: https://www.facebook.com/gungunpriatna002
+  ins_url: https://www.instagram.com/gungunpriatna
+  gh_url: https://github.com/doublegunz
+  in_url: https://www.linkedin.com/in/gungunpriatna
