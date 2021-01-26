@@ -24,4 +24,9 @@ window.onload = function() {
       header.removeClass('--default');
     }
   });
+ 
+  // handling manual redirection for phpid-online-learning
+  if (window.location.pathname === '/phpid-online-learning-2020/') {
+    window.location.assign('/phpid-learning/');
+  }
 }
