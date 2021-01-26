@@ -3,28 +3,28 @@ importScripts(
   'https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js'
 )
 
-const CACHE_NAME = 'phpidjkt-pwa'
+const CACHE_NAME = 'phpidjkt-pwa-20210126'
 
 workbox.precaching.precacheAndRoute([
   {
     url: '/index.html',
-    revision: '20180516v1'
+    revision: '20210126'
   },
   {
     url: '/assets/js/offcanvas.js',
-    revision: '20180516v1'
+    revision: '20210126'
   },
   {
     url: '/assets/js/slider.js',
-    revision: '20180516v1'
+    revision: '20210126'
   },
   {
     url: '/assets/js/header.js',
-    revision: '20180516v1'
+    revision: '20210126'
   },
   {
     url: '/assets/images/phpid-jakarta.png',
-    revision: '20180516v1'
+    revision: '20210126'
   }
 ])
 
